@@ -103,7 +103,7 @@ function NavBar() {
       <Typography variant='body1' className={classes.btn}>
         <CustomBtn txt="Sign Up" />
       </Typography>
-
+        <CustomBtn txt="Sign Up"/>
       <Typography variant='body1' className={classes.btnlogin}>
         <Signoutbtn txt="Log In" />
       </Typography>

@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.login{
+    border-radius: 18px;
+    margin-right: 40px;
+    height: 700px;
+}
+.container{
+  max-width: 1200px;
+  width: 500px;
+  background-color:#fff;
+  padding: 25px 30px;
+  border-radius: 18px;
+ 
+  
+}
+.bg-illustration {
+    position: relative;
+    height: 100vh;
+    width: fit-content;
+   background-color: black;
+    float:left;
+   
+  }
+
+  .bg-illustration h1{
+    margin-left: 60px;
+    color: #fff;
+    
+  }
+
+.image1 {
+    width: 580px;
+    height: 450px;
+    margin-top: 170px;
+  }
+
+
+.container .title{
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+margin-top: 20px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 26px -10px 13px -10px;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+ 
+.copy1{
+    margin-top: 20px;
+    font-size: 18;
+    color:black;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 236px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+ form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .category{
+   display: flex;
+   width: 55%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+   background: black;
+   border-color: #d9d9d9;
+ }
+ form input[type="radio"]{
+   display: none;
+ }
+ form .button{
+   height: 35px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 40px;
+   width: 350px;
+   border-radius: 18px;
+   border: none;
+   color: white;
+   font-size: 20px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   cursor: pointer;
+   margin: auto;
+   background: black
+   
+  
+ }
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background-color: #9b59b6;
+  color: #fff;
+  }
+
+  .regacc{
+    display: flex;
+    margin-right: 100px;
+  
+   justify-content: space-between;
+    
+    
+  }
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
+.signup-link{
+  margin-top: 10px;
+  font-weight: bold;
+}
+.container .option1{
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  
+  
+}
+
+.option1::before{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  background-color: #ccc;
+  margin-top: 315px;
+}
+.option1::after{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 135px;
+  position: absolute;
+  top: 50%;
+  right: 97px;
+  background-color: #ccc;
+  margin-top: 315px;
+}
+.container .facebook1 a{
+  display: block;
+  height: 45px;
+  width: 300px;
+  font-size: 18px;
+  text-decoration: none;
+  padding-right: 7px;
+  line-height: 20px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin-top: 180px;
+  
+ 
+}
+.gender-details .policy{
+    display: flex;
+}
+
+.gender-details .policy h3{
+    margin-left: 10px;
+}
+.container .facebook1 i{
+  padding-right: 18px;
+  font-size: 20px;
+  color: blue;
+  margin-top: 13px;
+}
+
+.container .facebook1 a{
+  background: linear-gradient( to right,  #3b5998 0%, #476bb8 100%);
+  margin: -30px 0px 50px 73px;
+}
+.container .facebook1 a:hover{
+  background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
+  
+}
+
+.container .google1 a{
+  display: block;
+  height: 45px;
+  width: 300px;
+  font-size: 18px;
+  text-decoration: none;
+  padding-right: 8px;
+  line-height: 20px;
+  color: black;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+
+  border-style: groove;
+ 
+}
+.container .google1 i{
+  padding-right: 15px;
+  font-size: 20px;
+  color: blue;
+  margin-top: 10px;
+}
+
+.container .google1 a{
+  background: white;
+  margin: 20px 0px 50px 73px;
+}
+.container .google1 a:hover{
+  background: rgb(245, 244, 242);
+  margin: 20px 0px 50px 73px;
+}
