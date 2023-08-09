@@ -37,6 +37,7 @@ return(
             </div>
           </form>
           <div class="option">or</div>
+          
           <div class="google">
           <a href="#"><i class="zmdi zmdi-google"></i>Continue with Google </a>
         </div>

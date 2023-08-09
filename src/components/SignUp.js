@@ -1,7 +1,10 @@
 import React from "react";
-import signup from '../assets/signup.png';
+import signup from './signup.png';
 
-import reg from '../assets/reg1.png';
+import reg from './reg1.png';
+import signup from './signup.png';
+import wel from './wel.jpg';
+import reg from './reg1.png';
 import './Signup.css';
 function SignUp(){
 return(
@@ -90,7 +93,7 @@ return(
           <a href="#"><i class="zmdi zmdi-google"></i>Continue with Google </a>
         </div>
         <div class="facebook1">
-          <a href="#"><i class="zmdi zmdi-facebook-box"></i>SignUp With Facebook</a>
+          <a href="#"><i class="zmdi zmdi-facebook-box"></i>Login With Facebook</a>
         </div>
         
         <div className="copy1">
