@@ -1,13 +1,14 @@
 import React from 'react'
-import { Button, withStyles } from '@material-ui/core'
+import { Button} from '@mui/material';
+import {styled} from '@mui/system';
 
-var StyledButton = withStyles({
-    root: {
+const StyledButton =styled(Button)(({ theme }) => ({
+  
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        height: "34px",
-        width: "150px",
+        height: "30px",
+        width: "140px",
         boxSizing: "border-box",
         fontSize: '15px',
         borderRadius: 10,
@@ -20,17 +21,13 @@ var StyledButton = withStyles({
         "&:hover":{
             background: "#20A4A4"
         },
-    },
-    label:{
-        textTransform: 'capitalize'
-    },
+   
+  
 
-})(Button);
+}));
 
-function Signoutbtn(props) {
-    return (
-        <StyledButton variant='contained'>{props.txt}</StyledButton>    
-    )
-}
+const Signoutbtn = ({ children,onClick }) => {
+    return <StyledButton onClick={onClick}>{children} </StyledButton>;
+  };
 
-export default Signoutbtn
+export default Signoutbtn;

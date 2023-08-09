@@ -1,5 +1,5 @@
 import React from "react";
-import log from './log2.png';
+import log from '../assets/log2.png';
 
 import './Login.css';
 function Login(){

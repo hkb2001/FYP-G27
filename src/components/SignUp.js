@@ -1,7 +1,7 @@
 import React from "react";
-import signup from './signup.png';
+import signup from '../assets/signup.png';
 
-import reg from './reg1.png';
+import reg from '../assets/reg1.png';
 import './Signup.css';
 function SignUp(){
 return(

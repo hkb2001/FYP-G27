@@ -1,18 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 import CustomBtn from './CustomBtn';
 import Signoutbtn from './components/signoutbtn';
 import NavBar from './components/NavBar';
-import withStyles from '@material-ui/core';
+import {withStyles,makeStyles} from '@mui/styles';
 import ContentContainer from './components/maincontainer';
-import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
+import { createTheme, ThemeProvider } from '@mui/material';
 
-import {Typography} from '@material-ui/core';
+import {Typography} from '@mui/material';
 import Middlebar from './components/middlebar';
 import Bottombar from './components/bottombar';
+import About from './components/About';
+import { Routes,Route,BrowserRouter} from 'react-router-dom';
+import Layout from './layout';
 
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main:"#2e1667",
@@ -60,11 +62,19 @@ const styles = makeStyles({
 function App() {
   return (
     <div className="App">
-    <ThemeProvider>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
       <NavBar/>
-      <ContentContainer/>
+      <Routes>
+      <Route path='/' element={<Layout/>}/>
+      <Route path='/about' element={<About/>}/>
+      
+      
+      {/* <ContentContainer/>
       <Middlebar />
-      <Bottombar />
+      <Bottombar /> */}
+      </Routes>
+      </BrowserRouter>
     </ThemeProvider>
     </div>
   );

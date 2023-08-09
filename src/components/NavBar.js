@@ -1,7 +1,9 @@
 import React from 'react'
-import logo from '../logo.png'
+import logo from '../assets/logo.png'
 import Signoutbtn from './signoutbtn'
-import { Toolbar, Typography, makeStyles } from '@material-ui/core'
+import { Toolbar, Typography, } from '@mui/material';
+import { makeStyles } from '@mui/styles';
+
 import CustomBtn from '../CustomBtn';
 
 const styles = makeStyles((theme) => ({
@@ -31,6 +33,7 @@ const styles = makeStyles((theme) => ({
     color: "#00EBEB",
     cursor: "pointer",
     fontWeight: "bold",
+    fontSize:'20px',
 
     fontFamily: "'Lato', sans-serif",
     textAlign: "left",
@@ -45,7 +48,7 @@ const styles = makeStyles((theme) => ({
     fontFamily: "'Lato', sans-serif",
     color: "#00EBEB",
     textAlign: "left",
-    fontSize: "12px",
+    fontSize: "15px",
     "&:hover": {
       color: "#ffffff",
     },
@@ -53,8 +56,26 @@ const styles = makeStyles((theme) => ({
   btn: {
     marginLeft: theme.spacing(2),
     marginRight: theme.spacing(0),
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "34px",
+    width: "150px",
+    boxSizing: "border-box",
+    fontWeight: "bold",
+    borderRadius: 10,
+    backgroundColor: "#00EBEB",
+    fontSize: '20px',
+    color: "#000000",
+    transform: "none",
+    transition: "background .3s, border-color .3s, color.3s",
+    "&:hover": {
+      background: "#9d9fa3"
+    },
+    fontFamily: "'Lato', sans-serif",
+
   },
- 
+
   menuItem: {
     cursor: "pointer",
     color: "#ffffff",
@@ -73,40 +94,40 @@ function NavBar() {
 
   return (
     <Toolbar position="sticky" className={classes.bar}>
-    <img src = {logo} className= {classes.logo} />
+      <img src={logo} className={classes.logo} />
       <div className={classes.titleContainer}>
-        <Typography variant='h6' className={classes.name}>
+        <div className={classes.name}>
           ERDify
-        </Typography>
+        </div>
 
-        <Typography variant='body1' className={classes.subtitle}>
+        <div className={classes.subtitle}>
           One stop ER Diagram Builder
-        </Typography>
+        </div>
       </div>
 
-      <Typography variant='body1' className={classes.menuItem}>
+      <div className={classes.menuItem}>
         About Us
-      </Typography>
+      </div>
 
-      <Typography variant='body1' className={classes.menuItem}>
+      <div className={classes.menuItem}>
         Features
-      </Typography>
+      </div>
 
-      <Typography variant='body1' className={classes.menuItem}>
+      <div className={classes.menuItem}>
         Pricing
-      </Typography>
+      </div>
 
-      <Typography variant='body1' className={classes.menuItem}>
+      <div className={classes.menuItem}>
         Products
-      </Typography>
+      </div>
 
-      <Typography variant='body1' className={classes.btn}>
-        <CustomBtn txt="Sign Up" />
-      </Typography>
-        <CustomBtn txt="Sign Up"/>
-      <Typography variant='body1' className={classes.btnlogin}>
-        <Signoutbtn txt="Log In" />
-      </Typography>
+      <div >
+        <CustomBtn onClick={()=>console.log("check")}>SIGN UP</CustomBtn>
+      </div>
+
+      <div >
+        <Signoutbtn>Log In</Signoutbtn>
+      </div>
     </Toolbar>
   )
 }

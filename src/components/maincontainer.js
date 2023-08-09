@@ -1,5 +1,5 @@
 import React from 'react';
-import { withStyles, makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/styles';
 import CustomBtn from '../CustomBtn';
 
 const useStyles = makeStyles((theme) => ({
@@ -48,7 +48,7 @@ const ContentContainer = () => {
         We develop products to automate things in this fast-paced world by using cutting-edge technologies and methods
       </div>
       <div className={classes.btn}>
-        <CustomBtn txt="Make ERD" />
+        <CustomBtn>Make ERD</CustomBtn>
       </div>
     </div>
   );

@@ -1,10 +1,12 @@
 import React from 'react'
-import logo from '../logo.png'
+import logo from '../assets/logo.png'
 import Signoutbtn from './signoutbtn'
-import { Toolbar, Typography, makeStyles } from '@material-ui/core'
-import insta from '../insta.png'
-import fb from '../fb.png'
-import lkd from '../lkd.png'
+import { Toolbar, Typography,} from '@mui/material';
+import { makeStyles } from '@mui/styles';
+import insta from '../assets/insta.png';
+import fb from '../assets/fb.png'
+import lkd from '../assets/lkd.png'
+import Box from '@mui/material/Box'
 
 const styles = makeStyles((theme) => ({
     bottombar: {
@@ -14,16 +16,20 @@ const styles = makeStyles((theme) => ({
       maxWidth: "100%", // Set the container's maximum width to 100%
       overflowX: "hidden",
       justifyContent: "space-between",
-      position: "relative",
+      // position: "relative",
       height: '350px',
-      alignItems: "flex-start", 
+      alignItems: 'flex-start', 
       
     },
     logo: {
       width: "35px",
       backgroundColor: "#000000",
       marginRight: "-40px",
-      marginTop: '30px',
+      marginLeft:'-10px',
+      display:'flex',
+      alignItems:'flex-start',
+      marginTop: '0px',
+      marginBottom:'-53px',
       height: "35px",
     },
     titleContainer: {
@@ -31,6 +37,7 @@ const styles = makeStyles((theme) => ({
       flexDirection: "column",
       paddingRight: "200px",
       alignItems: 'flex-start',
+      marginLeft:'px'
     },
     name: {
       color: "#00EBEB",
@@ -59,7 +66,7 @@ const styles = makeStyles((theme) => ({
       width: '550px',
       fontFamily: "'Lato', sans-serif",
       marginTop: '20px',
-      textAlign: 'left',
+      textAlign: 'justify',
       marginLeft: '30px',
 
     },
@@ -71,7 +78,6 @@ const styles = makeStyles((theme) => ({
       fontFamily: "'Lato', sans-serif",
       fontWeight: 'bold',
       fontSize: "18px",
-      flexGrow: 1.5,
       width: '80px',
       marginLeft: "180px",
       marginRight: '200px',
@@ -87,7 +93,7 @@ const styles = makeStyles((theme) => ({
       fontFamily: "'Lato', sans-serif",
       fontWeight: 'bold',
       fontSize: "25px",
-      flexGrow: 1,
+      // flexGrow: 1,
       width: '80px',
       marginLeft: "170px",
       marginRight: '0px',
@@ -95,11 +101,18 @@ const styles = makeStyles((theme) => ({
         color: "#00EBEB",
       },
     },
+    menuContainer:{
+      display:'flex',
+      flexDirection:'column',
+      marginRight:'50px',
+      marginTop:'-40px'
+
+    },
 
     iconContainer: {
       display: "flex",
       flexDirection: "row",
-      justifyContent: 'flex-start',
+      // justifyContent: 'flex-start',
       alignItems: "flex-start",
       marginLeft: '10px', 
       marginTop: '40px',
@@ -116,20 +129,27 @@ const styles = makeStyles((theme) => ({
 function Bottombar() {
     const classes = styles()
     return (
-        <Toolbar position="sticky" className={classes.bottombar}>
-    <img src = {logo} className= {classes.logo} />
+      
+        <Toolbar sx={{
+          flexGrow:'1.5'
+        }} position="sticky" className={classes.bottombar}>
+          <Box sx={{
+            marginLeft:'8px',
+          }} >
+          <img src = {logo} className= {classes.logo} />
       <div className={classes.titleContainer}>
-        <Typography variant='h6' className={classes.name}>
+      
+        <div className={classes.name}>
           ERDify
-        </Typography>
+        </div>
 
-        <Typography variant='body1' className={classes.subtitle}>
+        <div className={classes.subtitle}>
           One stop ER Diagram Builder
-        </Typography>
+        </div>
 
-        <Typography variant='body1' className={classes.note}>
+        <div  className={classes.note}>
         ERdify is your intelligent companion for creating Entity-Relationship Diagrams (ERDs) effortlessly. With cutting-edge AI algorithms, ERdify streamlines the process of visualizing complex data structures, helping you design robust databases and applications with ease. Say goodbye to tedious manual modeling and embrace the power of automation with ERdify, the ultimate ERD generator for modern data-driven projects.
-        </Typography>
+        </div>
 
         <div className={classes.iconContainer}>
       <img src = {insta} className= {classes.icon} />
@@ -137,27 +157,28 @@ function Bottombar() {
       <img src = {lkd} className= {classes.icon} />
       </div>
       </div>
-      <div className={classes.menucontainer}>
+      </Box>
+      <div className={classes.menuContainer}>
 
-      <Typography variant='h5' className={classes.company}>
+      <div className={classes.company}>
         Company
-      </Typography>
+      </div>
 
-      <Typography variant='body1' className={classes.menuItem}>
+      <div className={classes.menuItem}>
         About Us
-      </Typography>
+      </div>
 
-      <Typography variant='body1' className={classes.menuItem}>
+      <div className={classes.menuItem}>
         Features
-      </Typography>
+      </div>
 
-      <Typography variant='body1' className={classes.menuItem}>
+      <div className={classes.menuItem}>
         Pricing
-      </Typography>
+      </div>
 
-      <Typography variant='body1' className={classes.menuItem}>
+      <div className={classes.menuItem}>
         Products
-      </Typography>
+      </div>
       </div>
      
       

@@ -1,5 +1,5 @@
 import React from 'react'
-import { WithStyles, makeStyles } from '@material-ui/core'
+import { makeStyles } from '@mui/styles';
 
 const useStyles =  makeStyles((theme) => ({
     contentContainer: {

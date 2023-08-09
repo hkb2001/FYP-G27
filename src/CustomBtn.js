@@ -1,17 +1,18 @@
-import { Button, withStyles } from '@material-ui/core'
+import { Button  } from '@mui/material';
+import {styled} from '@mui/system';
 import React from 'react'
 
-const StyledButton = withStyles({
-    root: {
+const CustomButtonRoot = styled(Button)(({ theme }) => ({
+   
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        height: "34px",
-        width: "150px",
+        height: "30px", 
+        width: "140px",
         boxSizing: "border-box",
         fontWeight: "bold",
         borderRadius: 10,
-        background: "#00EBEB",
+        backgroundColor: "#00EBEB",
         fontSize: '15px',
         color: "#000000",
         transform: "none",
@@ -20,16 +21,11 @@ const StyledButton = withStyles({
             background: "#9d9fa3"
         },
         fontFamily: "'Lato', sans-serif",
-    },
-    label:{
-        textTransform: 'capitalize'
-    },
+    
 
-})(Button);
-function CustomBtn(props){
-    return (
-        <StyledButton variant='contained'>{props.txt}</StyledButton>
-    )
-}
+}));
+const CustomBtn = ({ children,onClick }) => {
+    return <CustomButtonRoot onClick={onClick}>{children}</CustomButtonRoot>;
+  };
 
-export default CustomBtn
+export default CustomBtn;
