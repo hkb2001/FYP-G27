@@ -1,7 +1,6 @@
 import React from 'react'
 import logo from '../assets/logo.png'
-import Signoutbtn from './signoutbtn'
-import { Toolbar, Typography,} from '@mui/material';
+import { Toolbar} from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import insta from '../assets/insta.png';
 import fb from '../assets/fb.png'

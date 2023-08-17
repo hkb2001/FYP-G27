@@ -3,7 +3,6 @@ import signup from './signup.png';
 
 import reg from './reg1.png';
 import signup from './signup.png';
-import wel from './wel.jpg';
 import reg from './reg1.png';
 import './Signup.css';
 function SignUp(){
