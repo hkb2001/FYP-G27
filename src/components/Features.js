@@ -136,6 +136,13 @@ const useStyles = makeStyles((theme) => ({
  
   row1:{
     marginLeft:'156px'
+  },
+  line: {
+    border: '1px solid #00ebeb',
+    width: "300px",
+    marginBottom: "20px",
+    marginLeft: "35px"
+
   }
 }));
 
@@ -157,12 +164,8 @@ function Features() {
           <div className={classes.heading}>Our Features</div>
           <div className={classes.space1}> </div>
           <div className={classes.head}>
-            {" "}
-            <Divider
-              className={classes.div}
-              sx={{ bgcolor: "#00EBEB" }}
-              variant="middle"
-            />
+          <div className={classes.line}> </div>
+
           </div>
 
           <div className={classes.text}>

@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     fontFamily: "Lato, sans-serif",
     textAlign: "center",
-    marginTop: "100px",
+    marginTop: "30px",
     margin: "auto",
     width: "350px",
     color: "white",
@@ -42,11 +42,12 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "20px",
     fontFamily: "Lato, sans-serif",
     textAlign: "center",
-    marginTop: "20px",
+    marginTop: "60px",
     margin: "auto",
     width: "750px",
     color: "#E7EBEB",
-    marginBottom: "20px",
+    marginBottom: "40px",
+
   },
 
   text: {
@@ -144,6 +145,13 @@ const useStyles = makeStyles((theme) => ({
 marginBottom:'10px'
     
   },
+  line: {
+    border: '1px solid #00ebeb',
+    width: "300px",
+    marginBottom: "20px",
+    marginLeft: "35px"
+
+  }
 }));
 
 function About() {
@@ -164,12 +172,8 @@ function About() {
           <div className={classes.heading}>About Us</div>
           <div className={classes.space1}> </div>
           <div className={classes.head}>
-            {" "}
-            <Divider
-              className={classes.div}
-              sx={{ bgcolor: "#00EBEB" }}
-              variant="middle"
-            />
+          <div className={classes.line}> </div>
+
           </div>
 
           <div className={classes.text}>

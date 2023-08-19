@@ -153,7 +153,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "50px",
     color: "#E7EBEB",
   },
-  head: {
+  line: {
     border: '1px solid #00ebeb',
     width: "300px",
     marginBottom: "20px",
@@ -168,7 +168,7 @@ function Products() {
     <div className={classes.fullpage}>
   <div className={classes.titleContainer}>
     <div variant="h4" className={classes.title}>Our Products</div>
-    <div className={classes.head}> </div>
+    <div className={classes.line}> </div>
     <div className={classes.space1}> </div>
     <div className={classes.text}>Transforming ideas into reality - our innovative feature revolutionizes the way you work</div>
   </div>
