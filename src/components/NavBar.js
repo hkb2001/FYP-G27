@@ -56,8 +56,8 @@ const styles = makeStyles((theme) => ({
     },
   },
   btn: {
-    marginLeft: theme.spacing(2),
-    marginRight: theme.spacing(0),
+    marginLeft:"16px",
+    marginRight: "8px",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -77,10 +77,25 @@ const styles = makeStyles((theme) => ({
     fontFamily: "'Lato', sans-serif",
 
   },
+<<<<<<< Updated upstream
 lin:{
   textDecoration: 'none',
 }
   
+=======
+
+  menuItem: {
+    cursor: "pointer",
+    color: "#ffffff",
+    fontFamily: "'Lato', sans-serif",
+    fontSize: "15px",
+    flexGrow: 0.1,
+    marginLeft: "16px",
+    "&:hover": {
+      color: "#00EBEB",
+    },
+  },
+>>>>>>> Stashed changes
 }));
 
 function NavBar() {

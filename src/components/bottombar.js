@@ -119,9 +119,9 @@ const styles = makeStyles((theme) => ({
     icon: {
       width: "30px",
       height: "30px",
-      margin: theme.spacing(1),
+      margin: "8px",
       marginTop: '10px',
-      marginLeft: theme.spacing(2),
+      marginLeft: "16px",
     },
 
   }));
