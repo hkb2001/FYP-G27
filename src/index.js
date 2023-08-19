@@ -8,8 +8,8 @@ import Products from './components/products';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Products />
+    <App />
+    {/* <Pricing /> */}
   </React.StrictMode>
 );
 

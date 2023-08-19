@@ -5,11 +5,10 @@ import NavBar from './NavBar';
 import { Routes,Route,BrowserRouter} from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material';
 import Bottombar from './bottombar';
+import { Divider } from "@mui/material";
 import p1 from '../assets/p1.jpg';
 import p2 from '../assets/p2.jpg';
 import p3 from '../assets/p3.jpg';
-
-
 import { fontFamily, fontWeight } from '@mui/system';
 
 const theme = createTheme({
@@ -75,7 +74,8 @@ const products = [
 
 const useStyles = makeStyles((theme) => ({
   product: {
-    border: '5px solid #00EBEB',
+    boxShadow: "1px 4px 8px 0 rgba(0, 0, 0, 0.6)",
+    // border: '3px solid #000000',
     width: '300px',
     padding: '16px',
     margin: '16px',
@@ -88,6 +88,7 @@ const useStyles = makeStyles((theme) => ({
       background: "#000000"
   },
   productContainer: {
+    background: "white",
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -95,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
   },
   productList: {
-    background: "black",
+    background: "white",
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-between'
@@ -110,12 +111,19 @@ const useStyles = makeStyles((theme) => ({
 
   },
   title: {
+    background: "black",
+    maxWidth: "100%", // Set the container's maximum width to 100%
+    overflowX: "hidden",
   cursor: "pointer",
-  color: "#ffffff"  ,
-  paddingBottom: "50px",
-  paddingTop: "50px",
-  fontWeight: "bold",
-  fontFamily: "'Lato', sans-serif",
+  fontSize: "42px",
+    fontWeight: "bold",
+    fontFamily: "Lato, sans-serif",
+    textAlign: "center",
+    marginTop: "50px",
+    marginBottom: "20px",
+    margin: "auto",
+    width: "350px",
+    color: "white",
   "&:hover": {
     color: "#00EBEB",
   },
@@ -124,7 +132,37 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "'Lato', sans-serif",
     fontSize: "17px",
     lineHeight: 1.5,
+  },
+  space1: {
+    marginTop: "10px",
+  },
+  titleContainer: {
+    width: "100%", /* Takes the full width of the screen */
+  height: "260px",
+  display: "flex",
+  alignItems: "center",
+  background: "black",
+  display: 'flex',
+    flexDirection: 'column',
+
+  },
+  text: {
+    fontSize: "20px",
+    fontFamily: "Lato, sans-serif",
+    width: "500px",
+    margin: "auto",
+    textAlign: "center",
+    marginBottom: "50px",
+    color: "#E7EBEB",
+  },
+  head: {
+    border: '1px solid #00ebeb',
+    width: "300px",
+    marginBottom: "20px",
+    marginLeft: "10px"
+
   }
+
 
 }));
 
@@ -132,25 +170,29 @@ function Products() {
   const classes = useStyles();
   return (
     <div className={classes.fullpage}>
-      <NavBar />
-      <div className={classes.productContainer}>
-        <Typography variant="h4" className={classes.title}>Our Products</Typography>
-        <div className={classes.productList}>
-          {products.map((product) => (
-            <div key={product.id} className={classes.product}>
-            <img
-                src={product.Image}
-                alt={product.name}
-                style={{ width: "300px", height: "250px", borderRadius: "20px", objectFit: "cover" }}
-              /> 
-              <Typography variant= 'h5' className={classes.productName}>{product.name}</Typography>
-              <Typography variant='body' className={classes.productdescription}>{product.description}</Typography>
-            </div>
-          ))}
+  <div className={classes.titleContainer}>
+    <div variant="h4" className={classes.title}>Our Products</div>
+    <div className={classes.head}> </div>
+    <div className={classes.space1}> </div>
+    <div className={classes.text}>Transforming ideas into reality - our innovative feature revolutionizes the way you work</div>
+  </div>
+  <div className={classes.productContainer}>
+    <div className={classes.productList}>
+      {products.map((product) => (
+        <div key={product.id} className={classes.product}>
+          <img
+            src={product.Image}
+            alt={product.name}
+            style={{ width: "300px", height: "250px", borderRadius: "20px", objectFit: "cover" }}
+          /> 
+          <Typography variant='h5' className={classes.productName}>{product.name}</Typography>
+          <Typography variant='body' className={classes.productdescription}>{product.description}</Typography>
         </div>
-      </div>
-      <Bottombar />
+      ))}
     </div>
+  </div>
+</div>
+
   );
 }
 

@@ -9,6 +9,7 @@ import Layout from './layout';
 import Features from './components/Features';
 
 import Bottombar from './components/bottombar';
+import Products from './components/products';
 
 
 const theme = createTheme({
@@ -67,7 +68,8 @@ function App() {
       <Route path='/' element={<Layout/>}/>
       <Route path='about' element={<About/>}/>
       <Route path='features' element={<Features/>}/>
-     
+      <Route path='products' element={<Products/>}/>
+    
       {/* <ContentContainer/>
       <Middlebar />
       <Bottombar /> */}

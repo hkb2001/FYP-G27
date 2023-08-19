@@ -6,6 +6,7 @@ import { makeStyles } from '@mui/styles';
 import {NavLink} from 'react-router-dom' 
 import {Link} from 'react-router-dom' 
 import CustomBtn from '../CustomBtn';
+import Products from './products';
 import { color, style } from '@mui/system';
 
 const styles = makeStyles((theme) => ({
@@ -77,13 +78,9 @@ const styles = makeStyles((theme) => ({
     fontFamily: "'Lato', sans-serif",
 
   },
-<<<<<<< Updated upstream
 lin:{
   textDecoration: 'none',
-}
-  
-=======
-
+},
   menuItem: {
     cursor: "pointer",
     color: "#ffffff",
@@ -95,7 +92,6 @@ lin:{
       color: "#00EBEB",
     },
   },
->>>>>>> Stashed changes
 }));
 
 function NavBar() {
@@ -140,7 +136,7 @@ function NavBar() {
    
     <NavLink className={classes.lin} to="/features" activeClassName="active">Features</NavLink>
 
-    <NavLink className={classes.lin} to="/product" activeClassName="active">Product</NavLink>
+    <NavLink className={classes.lin} to="/products" activeClassName="active">Product</NavLink>
     </nav>
       <div >
         <CustomBtn onClick={()=>console.log("check")}>SIGN UP</CustomBtn>
