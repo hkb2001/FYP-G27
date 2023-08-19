@@ -3,6 +3,8 @@ import { Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import NavBar from './NavBar';
 import { createTheme, ThemeProvider } from '@mui/material';
+import CustomBtn from '../CustomBtn';
+import Buy from './buy';
 
 const theme = createTheme({
   // your theme configuration
@@ -55,27 +57,36 @@ const useStyles = makeStyles((theme) => ({
     
       },
   pricingContainer: {
-    background: "#ffffff",
+    background: "white",
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
     textAlign: 'center',
-    padding: '50px 0',
+    marginTop: "10px",
+    marginBottom: "!0px",
   },
   pricingPlan: {
     boxShadow: "1px 4px 8px 0 rgba(0, 0, 0, 0.6)",
-    width: '300px',
+    width: '320px',
     padding: '16px',
     margin: '16px',
     textAlign: 'center',
-    background: "#f0f0f0",
+    background: "white",
     borderRadius: "20px",
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   },
+  pricetitle:{
+     marginTop: "10px",
+  },
+
   planTitle: {
     fontSize: "24px",
     fontWeight: "bold",
     marginBottom: "10px",
+
   },
   planPrice: {
     fontSize: "20px",
@@ -85,12 +96,22 @@ const useStyles = makeStyles((theme) => ({
   planFeatures: {
     fontSize: "16px",
     lineHeight: 1.5,
+    textAlign: 'left',
+    alignContent: 'flex-start'
+
   },
   pricingList: {
     display: 'flex',
     flexWrap: 'wrap', // To wrap the pricing plan items if needed
     justifyContent: 'center', // Center the items horizontally
-    gap: '20px',
+    gap: '40px',
+  },
+  btn: {
+    marginTop: '20px',
+    marginBottom: "20px"
+  },
+  features: {
+    alignContent: 'flex-start',
   }
 }));
 
@@ -100,9 +121,15 @@ const pricingPlans = [
     title: 'Basic Plan',
     price: '$9.99/month',
     features: [
-      'Feature 1',
-      'Feature 2',
-      'Feature 3',
+      'Text Input',
+      'Entity and attribute extraction.',
+      'Basic ERD generation',
+      'Entity recognition and labeling.',
+      'Attribute extraction and assignment.',
+      'Simple relationship creation.',
+      'Basic diagram styling.',
+      'Export ERDs in standard formats',
+      
     ],
   },
   {
@@ -110,12 +137,17 @@ const pricingPlans = [
     title: 'Pro Plan',
     price: '$19.99/month',
     features: [
-      'All Basic features',
-      'Feature 4',
-      'Feature 5',
-    ],
+        'Advanced relationships (subtype/supertype, self-referencing)',
+        'Cardinality and participation indicators',
+        'Recognize attribute types (numeric, string, date)',
+        'Data flow annotations',
+        'Export in PNG, SVG, PDF formats',
+        'Integrate with popular tools and databases',
+        'Customize ERD appearance',
+        'Priority customer support',
+      ]
+      
   },
-  // Add more plans as needed
 ];
 
 function Pricing() {
@@ -133,13 +165,22 @@ function Pricing() {
         <div className={classes.pricingList}>
           {pricingPlans.map((plan) => (
             <div key={plan.id} className={classes.pricingPlan}>
-              <Typography variant='h5' className={classes.planTitle}>{plan.title}</Typography>
-              <Typography variant='h6' className={classes.planPrice}>{plan.price}</Typography>
+            <div className={classes.pricetitle}>
+              <div className={classes.planTitle}>{plan.title}</div>
+              <div className={classes.planPrice}>{plan.price}</div>
+              <div className={classes.btn}>
+              <Buy>GET</Buy>
+              </div>
+                </div>
+                <div className={classes.features}>
               <ul className={classes.planFeatures}>
                 {plan.features.map((feature, index) => (
                   <li key={index}>{feature}</li>
                 ))}
               </ul>
+              </div>
+            
+              
             </div>
           ))}
         </div>

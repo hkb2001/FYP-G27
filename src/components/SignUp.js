@@ -1,10 +1,9 @@
 import React from "react";
-import signup from './signup.png';
-
 import reg from './reg1.png';
 import signup from './signup.png';
 import reg from './reg1.png';
 import './Signup.css';
+
 function SignUp(){
 return(
     <div class="parent clearfix">

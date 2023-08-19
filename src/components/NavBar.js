@@ -17,7 +17,7 @@ const styles = makeStyles((theme) => ({
     maxWidth: "100%", // Set the container's maximum width to 100%
     overflowX: "hidden",
     justifyContent: "space-between",
-    alignItems: "center", // Center items vertically
+    // Center items vertically
 
   },
   logo: {
@@ -58,7 +58,7 @@ const styles = makeStyles((theme) => ({
   },
   btn: {
     marginLeft: theme.spacing(2),
-    marginRight: theme.spacing(0),
+    marginRight: theme.spacing(2),
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -121,12 +121,10 @@ function NavBar() {
     <NavLink className={classes.lin}  to="/" activeClassName="active">Home</NavLink>
   
     <NavLink className={classes.lin} to="/about" activeClassName="active">About</NavLink>
-    
-    <NavLink className={classes.lin} to="/pricing" activeClassName="active">Pricing</NavLink>
-   
+       
     <NavLink className={classes.lin} to="/features" activeClassName="active">Features</NavLink>
 
-    <NavLink className={classes.lin} to="/products" activeClassName="active">Product</NavLink>
+    <NavLink className={classes.lin} to="/products" activeClassName="active">Products</NavLink>
 
     <NavLink className={classes.lin} to="/pricing" activeClassName="active">Pricing</NavLink>
     </nav>
