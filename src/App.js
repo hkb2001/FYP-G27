@@ -1,17 +1,14 @@
 import './App.css';
-import CustomBtn from './CustomBtn';
-import Signoutbtn from './components/signoutbtn';
 import NavBar from './components/NavBar';
-import {withStyles,makeStyles} from '@mui/styles';
-import ContentContainer from './components/maincontainer';
+import {makeStyles} from '@mui/styles';
 import { createTheme, ThemeProvider } from '@mui/material';
 
-import {Typography} from '@mui/material';
-import Middlebar from './components/middlebar';
-import Bottombar from './components/bottombar';
 import About from './components/About';
 import { Routes,Route,BrowserRouter} from 'react-router-dom';
 import Layout from './layout';
+import Features from './components/Features';
+
+import Bottombar from './components/bottombar';
 
 
 const theme = createTheme({
@@ -66,14 +63,16 @@ function App() {
       <BrowserRouter>
       <NavBar/>
       <Routes>
+     
       <Route path='/' element={<Layout/>}/>
-      <Route path='/about' element={<About/>}/>
-      
-      
+      <Route path='about' element={<About/>}/>
+      <Route path='features' element={<Features/>}/>
+     
       {/* <ContentContainer/>
       <Middlebar />
       <Bottombar /> */}
       </Routes>
+      <Bottombar/>
       </BrowserRouter>
     </ThemeProvider>
     </div>

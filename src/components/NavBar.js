@@ -3,8 +3,10 @@ import logo from '../assets/logo.png'
 import Signoutbtn from './signoutbtn'
 import { Toolbar } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-
+import {NavLink} from 'react-router-dom' 
+import {Link} from 'react-router-dom' 
 import CustomBtn from '../CustomBtn';
+import { color, style } from '@mui/system';
 
 const styles = makeStyles((theme) => ({
   bar: {
@@ -26,7 +28,7 @@ const styles = makeStyles((theme) => ({
   titleContainer: {
     display: "flex",
     flexDirection: "column",
-    paddingRight: "400px",
+    paddingRight: "370px",
 
   },
   name: {
@@ -48,7 +50,7 @@ const styles = makeStyles((theme) => ({
     fontFamily: "'Lato', sans-serif",
     color: "#00EBEB",
     textAlign: "left",
-    fontSize: "15px",
+    fontSize: "12px",
     "&:hover": {
       color: "#ffffff",
     },
@@ -75,18 +77,10 @@ const styles = makeStyles((theme) => ({
     fontFamily: "'Lato', sans-serif",
 
   },
-
-  menuItem: {
-    cursor: "pointer",
-    color: "#ffffff",
-    fontFamily: "'Lato', sans-serif",
-    fontSize: "15px",
-    flexGrow: 0.1,
-    marginLeft: theme.spacing(2),
-    "&:hover": {
-      color: "#00EBEB",
-    },
-  },
+lin:{
+  textDecoration: 'none',
+}
+  
 }));
 
 function NavBar() {
@@ -105,8 +99,8 @@ function NavBar() {
         </div>
       </div>
 
-      <div className={classes.menuItem}>
-        About Us
+      {/* <div className={classes.menuItem}>
+      About Us
       </div>
 
       <div className={classes.menuItem}>
@@ -119,8 +113,20 @@ function NavBar() {
 
       <div className={classes.menuItem}>
         Products
-      </div>
+      </div> */}
+      <nav>
 
+  
+    <NavLink className={classes.lin}  to="/" activeClassName="active">Home</NavLink>
+  
+    <NavLink className={classes.lin} to="/about" activeClassName="active">About</NavLink>
+    
+    <NavLink className={classes.lin} to="/pricing" activeClassName="active">Pricing</NavLink>
+   
+    <NavLink className={classes.lin} to="/features" activeClassName="active">Features</NavLink>
+
+    <NavLink className={classes.lin} to="/product" activeClassName="active">Product</NavLink>
+    </nav>
       <div >
         <CustomBtn onClick={()=>console.log("check")}>SIGN UP</CustomBtn>
       </div>

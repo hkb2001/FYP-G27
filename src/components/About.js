@@ -1,11 +1,14 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
-import { test } from "../assets/test.jpg";
-import { test1 } from "../assets/test1.jpg";
-import { test2 } from "../assets/test2.png";
-import { test3 } from "../assets/test3.jpg";
+import hasnain from "../assets/hasnain.jpg";
+import soban from "../assets/soban.jpg";
+import zain from "../assets/zain1.png";
+import img4 from "../assets/img1.jpg";
 import { Box } from "@mui/material";
-import { Divider } from '@mui/material';
+import { Divider } from "@mui/material";
+import insta from "../assets/insta1.png";
+import fb from "../assets/fb1.png";
+import lkd from "../assets/lin1.png";
 const useStyles = makeStyles((theme) => ({
   contentContainer: {
     display: "flex",
@@ -25,10 +28,6 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
     width: "350px",
     color: "white",
-
-
-
-
   },
   heading1: {
     fontSize: "42px",
@@ -39,31 +38,39 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
     width: "350px",
   },
+  heading2: {
+    fontSize: "20px",
+    fontFamily: "Lato, sans-serif",
+    textAlign: "center",
+    marginTop: "20px",
+    margin: "auto",
+    width: "750px",
+    color: "#E7EBEB",
+    marginBottom: "20px",
+  },
+
   text: {
     fontSize: "20px",
     fontFamily: "Lato, sans-serif",
-width:'330px',
-    marginTop: "50px",
+    width: "100%",
+    marginTop: "25px",
     margin: "auto",
     textAlign: "center",
     marginBottom: "20px",
-    color: "white",
+    color: "#E7EBEB",
   },
 
-  
   cont: {
     backgroundColor: "black",
-    marginTop: "1px",
-    marginLeft: "2px",
-    marginRight: "2px",
+   
   },
 
   column: {
     float: "left",
     width: "293px",
-    marginBottom: "50px",
+    marginBottom: "20px",
     padding: "0 8px",
-    marginLeft: "1px",
+    marginLeft: "4px",
   },
 
   card: {
@@ -75,11 +82,6 @@ width:'330px',
     padding: "0 16px",
   },
 
-  // container::after, row::after :{
-  //   content: "",
-  //   clear: 'both',
-  //   display: 'table',
-  // },
 
   title: {
     color: "grey",
@@ -103,21 +105,45 @@ width:'330px',
   },
   cardCont: {
     backgroundColor: "white",
-    marginBottom: "4px",
-    marginLeft: "2px",
-    marginRight: "2px",
+    
   },
   space: {
+    marginTop: "50px",
+  },
+
+  space1: {
     marginTop: "30px",
   },
-div:{
- height:"1px"
-},
+  div: {
+    height: "1px",
+  },
 
-head:{
-  width:"10%",
-  marginLeft:"565px"
-}
+  head: {
+    width: "10%",
+    marginLeft: "565px",
+  },
+
+  img: {
+    width: "277px",
+    height: "325px",
+    borderBottom: "5",
+  },
+  icon: {
+    width: "50px",
+    height: "50px",
+
+    marginRight: "20px",
+    "&:hover": {
+      boxShadow: "0 4px 15px 0 rgba(120,120,120)",
+      // backgroundColor: "grey",
+      borderRadius: 13,
+    },
+  },
+  icons: {
+    marginLeft:'1000px',
+marginBottom:'10px'
+    
+  },
 }));
 
 function About() {
@@ -131,19 +157,34 @@ function About() {
       sx={{
         maxWidth: "xl",
         backgroundColor: "white",
-        
       }}
     >
       <div className={classes.contentContainer}>
         <div className={classes.cont}>
-         <div className={classes.heading}>About Us</div>
-         <div className={classes.space}> </div>
-         <div className={classes.head}>   <Divider className={classes.div} sx={{ bgcolor: '#00EBEB' }} variant="middle" /></div>
-      
-          
+          <div className={classes.heading}>About Us</div>
+          <div className={classes.space1}> </div>
+          <div className={classes.head}>
+            {" "}
+            <Divider
+              className={classes.div}
+              sx={{ bgcolor: "#00EBEB" }}
+              variant="middle"
+            />
+          </div>
+
           <div className={classes.text}>
-          Turn every software project into a successful one.
-          Yield  influential  illustrations to  enrich your Ideas,  Plans and Processes 
+            Let's make every software project a success.
+          </div>
+          <div className={classes.heading}>Who Are We?</div>
+          <div className={classes.heading2}>
+            ERDify is an innovative tool that can be used to ease the time
+            taking and hectic process of Entity-Relationship Diagram generation.
+            ERDify allows businesses to reduce the time and resources spent on
+            these task and focus more on highvalued tasks. By using NLP
+            techniques, we aim to identify and extract information for ERDs and
+            generate Entity Relation Diagram. With the help of our ERDify, users
+            can design ER Diagrams efficiently without having the need to be a
+            database expert.
           </div>
         </div>
         <div className={classes.cardCont}>
@@ -152,15 +193,12 @@ function About() {
           <div className={classes.row}>
             <div className={classes.column}>
               <div className={classes.card}>
-                <img
-                  src="https://www.kasandbox.org/programming-images/avatars/marcimus.png"
-                  alt=""
-                />
+                <img src={hasnain} className={classes.img} alt="" />
                 <div className={classes.container}>
-                  <h2>Hasnain</h2>
+                  <h2>Hasnain Khalid</h2>
                   <p className={classes.title}>CEO & Founder</p>
                   <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>hasnain@example.com</p>
+                  <p>hasnainkbhatti@gmail.com</p>
                   <p>
                     <button className={classes.button}>Contact</button>
                   </p>
@@ -170,15 +208,12 @@ function About() {
 
             <div className={classes.column}>
               <div className={classes.card}>
-                <img
-                  src="https://www.kasandbox.org/programming-images/avatars/marcimus-red.png"
-                  alt=""
-                />
+                <img src={img4} className={classes.img} alt="" />
                 <div className={classes.container}>
-                  <h2>Soban</h2>
+                  <h2>Malaika Munawar</h2>
                   <p className={classes.title}>CEO & Founder</p>
                   <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>soban@example.com</p>
+                  <p>malaikamunawar@gmail.com</p>
                   <p>
                     <button className={classes.button}>Contact</button>
                   </p>
@@ -188,15 +223,12 @@ function About() {
 
             <div className={classes.column}>
               <div className={classes.card}>
-                <img
-                  src="https://www.kasandbox.org/programming-images/avatars/marcimus-purple.png"
-                  alt=""
-                />
+                <img src={zain} className={classes.img} alt="" />
                 <div className={classes.container}>
-                  <h2>Malaika</h2>
+                  <h2>Zain Hassan</h2>
                   <p className={classes.title}>CEO & Founder</p>
                   <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>malaika@example.com</p>
+                  <p>zhassan9246@gmail.com</p>
                   <p>
                     <button className={classes.button}>Contact</button>
                   </p>
@@ -206,15 +238,12 @@ function About() {
 
             <div className={classes.column}>
               <div className={classes.card}>
-                <img
-                  src="https://www.kasandbox.org/programming-images/avatars/marcimus-orange.png"
-                  alt=""
-                />
+                <img src={soban} className={classes.img} alt="" />
                 <div className={classes.container}>
-                  <h2>Zain</h2>
+                  <h2>Sheikh Soban</h2>
                   <p className={classes.title}>CEO & Founder</p>
                   <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>zain@example.com</p>
+                  <p>sheikhsoban4@gmail.com</p>
                   <p>
                     <button className={classes.button}>Contact</button>
                   </p>
@@ -222,6 +251,7 @@ function About() {
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </Box>
