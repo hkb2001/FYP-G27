@@ -6,8 +6,8 @@ import { makeStyles } from '@mui/styles';
 import {NavLink} from 'react-router-dom' 
 import {Link} from 'react-router-dom' 
 import CustomBtn from '../CustomBtn';
-import Products from './products';
 import { color, style } from '@mui/system';
+import Pricing from './pricing';
 
 const styles = makeStyles((theme) => ({
   bar: {
@@ -57,8 +57,8 @@ const styles = makeStyles((theme) => ({
     },
   },
   btn: {
-    marginLeft:"16px",
-    marginRight: "8px",
+    marginLeft: theme.spacing(2),
+    marginRight: theme.spacing(0),
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -80,18 +80,8 @@ const styles = makeStyles((theme) => ({
   },
 lin:{
   textDecoration: 'none',
-},
-  menuItem: {
-    cursor: "pointer",
-    color: "#ffffff",
-    fontFamily: "'Lato', sans-serif",
-    fontSize: "15px",
-    flexGrow: 0.1,
-    marginLeft: "16px",
-    "&:hover": {
-      color: "#00EBEB",
-    },
-  },
+}
+  
 }));
 
 function NavBar() {
@@ -137,6 +127,8 @@ function NavBar() {
     <NavLink className={classes.lin} to="/features" activeClassName="active">Features</NavLink>
 
     <NavLink className={classes.lin} to="/products" activeClassName="active">Product</NavLink>
+
+    <NavLink className={classes.lin} to="/pricing" activeClassName="active">Pricing</NavLink>
     </nav>
       <div >
         <CustomBtn onClick={()=>console.log("check")}>SIGN UP</CustomBtn>

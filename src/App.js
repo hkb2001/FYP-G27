@@ -10,6 +10,7 @@ import Features from './components/Features';
 
 import Bottombar from './components/bottombar';
 import Products from './components/products';
+import Pricing from './components/pricing';
 
 
 const theme = createTheme({
@@ -69,6 +70,7 @@ function App() {
       <Route path='about' element={<About/>}/>
       <Route path='features' element={<Features/>}/>
       <Route path='products' element={<Products/>}/>
+      <Route path='pricing' element={<Pricing/>}/>
     
       {/* <ContentContainer/>
       <Middlebar />

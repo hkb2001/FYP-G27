@@ -112,10 +112,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     background: "black",
-    maxWidth: "100%", // Set the container's maximum width to 100%
-    overflowX: "hidden",
-  cursor: "pointer",
-  fontSize: "42px",
+    cursor: "pointer",
+    fontSize: "42px",
     fontWeight: "bold",
     fontFamily: "Lato, sans-serif",
     textAlign: "center",
@@ -162,8 +160,6 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "10px"
 
   }
-
-
 }));
 
 function Products() {
