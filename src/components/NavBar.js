@@ -4,10 +4,13 @@ import Signoutbtn from './signoutbtn'
 import { Toolbar } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import {NavLink} from 'react-router-dom' 
-import {Link} from 'react-router-dom' 
 import CustomBtn from '../CustomBtn';
+<<<<<<< Updated upstream
 import { color, style } from '@mui/system';
 import Pricing from './pricing';
+=======
+import { useNavigate } from 'react-router-dom';
+>>>>>>> Stashed changes
 
 const styles = makeStyles((theme) => ({
   bar: {
@@ -86,7 +89,9 @@ lin:{
 
 function NavBar() {
   const classes = styles()
-
+const navigate=useNavigate()
+const sign = () => navigate('/signup');
+const logi = () => navigate('/login');
   return (
     <Toolbar position="sticky" className={classes.bar}>
       <img src={logo} className={classes.logo} />
@@ -129,11 +134,11 @@ function NavBar() {
     <NavLink className={classes.lin} to="/pricing" activeClassName="active">Pricing</NavLink>
     </nav>
       <div >
-        <CustomBtn onClick={()=>console.log("check")}>SIGN UP</CustomBtn>
+        <CustomBtn onClick={sign}>SIGN UP</CustomBtn>
       </div>
 
       <div >
-        <Signoutbtn>Log In</Signoutbtn>
+        <Signoutbtn onClick={logi}>Log In</Signoutbtn>
       </div>
     </Toolbar>
   )
