@@ -166,6 +166,7 @@ function Products() {
   const classes = useStyles();
   return (
     <div className={classes.fullpage}>
+    <NavBar />
   <div className={classes.titleContainer}>
     <div variant="h4" className={classes.title}>Our Products</div>
     <div className={classes.line}> </div>

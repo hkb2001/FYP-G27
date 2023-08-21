@@ -1,6 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
 import CustomBtn from '../CustomBtn';
+import {NavLink} from 'react-router-dom' 
+
 
 const useStyles = makeStyles((theme) => ({
   contentContainer: {
@@ -33,6 +35,26 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "60px",
     marginLeft: theme.spacing(1.5),
   },
+  lin:{
+    textDecoration: "none",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "30px", 
+    width: "140px",
+    boxSizing: "border-box",
+    fontWeight: "bold",
+    borderRadius: 10,
+    backgroundColor: "#00EBEB",
+    fontSize: '15px',
+    color: "#000000",
+    transform: "none",
+    transition: "background .3s, border-color .3s, color.3s" ,
+    "&:hover":{
+        background: "#9d9fa3"
+    },
+    fontFamily: "'Lato', sans-serif",
+  }
 
 }));
 
@@ -48,7 +70,8 @@ const ContentContainer = () => {
         We develop products to automate things in this fast-paced world by using cutting-edge technologies and methods
       </div>
       <div className={classes.btn}>
-        <CustomBtn>Make ERD</CustomBtn>
+        {/* <CustomBtn>Make ERD</CustomBtn> */}
+        <NavLink className={classes.lin} to="/sidebar" activeClassName="active">Make ERD</NavLink>
       </div>
     </div>
   );
