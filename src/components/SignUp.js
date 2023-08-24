@@ -8,31 +8,38 @@ import fb from "../assets/fbook1.png";
 import goog from "../assets/google.png";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+
 const useStyles = makeStyles((theme) => ({
   parentclear: {
     backgroundColor: "black",
     height: "780px",
   },
-  login: {
-    borderRadius: "18px",
-    marginRight: "40px",
-  },
-  container: {
-    maxWidth: "1600px",
-    width: "540px",
-    backgroundColor: "#fff",
-    padding: "25px 30px",
-    borderRadius: "18px",
-    height: "630px",
-    float: "right",
-    marginTop: "40px",
-  },
-  bgillus: {
-    position: "relative",
-    height: "100vh",
-    width: "fit-content",
-    backgroundColor: "black",
-    float: "left",
+
+  login:{
+    borderRadius: '18px',
+    marginRight: '40px',
+    
+   
+},
+container:{
+  maxWidth: '1600px',
+  width: '540px',
+  backgroundColor:'#fff',
+  padding: '25px 30px',
+  borderRadius: '18px',
+ height:'630px',
+ float:'right',
+ marginTop:"40px",
+  
+},
+bgillus: {
+    position: 'relative',
+    height: '100vh',
+    width: 'fit-content',
+   backgroundColor: 'black',
+    float:'left',
+   
+
   },
 
   image1: {
@@ -256,7 +263,9 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "45px",
   },
 }));
-function SignUp() {
+
+
+function SignUp(){
   const classes = useStyles();
   const navigate = useNavigate();
   return (

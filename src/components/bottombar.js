@@ -8,46 +8,77 @@ import lkd from "../assets/lkd.png";
 import Box from "@mui/material/Box";
 
 const styles = makeStyles((theme) => ({
-  bottombar: {
-    backgroundColor: "#000000",
-    color: "#FFFFFF",
-    display: "flex",
-    maxWidth: "100%", // Set the container's maximum width to 100%
-    overflowX: "hidden",
-    justifyContent: "space-between",
-    // position: "relative",
-    height: "350px",
-    alignItems: "flex-start",
-  },
-  logo: {
-    width: "35px",
-    backgroundColor: "#000000",
-    marginRight: "-40px",
-    marginLeft: "-10px",
-    display: "flex",
-    alignItems: "flex-start",
-    marginTop: "0px",
-    marginBottom: "-53px",
-    height: "35px",
-  },
-  titleContainer: {
-    display: "flex",
-    flexDirection: "column",
-    paddingRight: "200px",
-    alignItems: "flex-start",
-    marginLeft: "px",
-  },
-  name: {
-    color: "#00EBEB",
-    cursor: "pointer",
-    fontWeight: "bold",
-    marginLeft: "30px",
-    fontFamily: "'Lato', sans-serif",
-    marginTop: "20px",
-    "&:hover": {
+
+
+    bottombar: {
+      backgroundColor: "#000000",
+      color: "#FFFFFF",
+      display: "flex",
+      maxWidth: "100%", // Set the container's maximum width to 100%
+      overflowX: "hidden",
+      justifyContent: "space-between",
+      // position: "relative",
+      height: '350px',
+      alignItems: 'flex-start', 
+      
+      
+    },
+    logo: {
+      width: "35px",
+      backgroundColor: "#000000",
+      marginRight: "-40px",
+      marginLeft:'-10px',
+      display:'flex',
+      alignItems:'flex-start',
+      marginTop: '0px',
+      marginBottom:'-53px',
+      height: "35px",
+    },
+    titleContainer: {
+      display: "flex",
+      flexDirection: "column",
+      paddingRight: "200px",
+      alignItems: 'flex-start',
+      marginLeft:'px'
+    },
+    name: {
+      color: "#00EBEB",
+      cursor: "pointer",
+      fontWeight: "bold",
+      marginLeft: '30px',
+      fontFamily: "'Lato', sans-serif",
+      marginTop: "20px",
+      "&:hover": {
+        color: "#ffffff",
+      },
+    },
+    subtitle: {
+      fontFamily: "'Lato', sans-serif",
+      color: "#00EBEB",
+      textAlign: "left",
+      marginLeft: '30px',
+
+      fontSize: "12px",
+      width: '190px',
+      "&:hover": {
+        color: "#ffffff",
+      },
+    },
+    note :{
+      width: '550px',
+      fontFamily: "'Lato', sans-serif",
+      marginTop: '20px',
+      textAlign: 'justify',
+      marginLeft: '30px',
+
+    },
+    
+    menuItem: {
+      cursor: "pointer",
+
       color: "#ffffff",
     },
-  },
+  
   subtitle: {
     fontFamily: "'Lato', sans-serif",
     color: "#00EBEB",

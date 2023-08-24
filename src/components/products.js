@@ -159,17 +159,8 @@ function Products() {
   const classes = useStyles();
   return (
     <div className={classes.fullpage}>
-      <div className={classes.titleContainer}>
-        <div variant="h4" className={classes.title}>
-          Our Products
-        </div>
-        <div className={classes.line}> </div>
-        <div className={classes.space1}> </div>
-        <div className={classes.text}>
-          Transforming ideas into reality - our innovative feature
-          revolutionizes the way you work
-        </div>
-      </div>
+  
+      
       <div className={classes.productContainer}>
         <div className={classes.productList}>
           {products.map((product) => (

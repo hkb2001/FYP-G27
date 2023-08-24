@@ -8,7 +8,7 @@ import CustomBtn from '../CustomBtn';
 
 import { color, style } from '@mui/system';
 import Pricing from './pricing';
-
+import Dashboard from './dashboard';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -132,6 +132,7 @@ const logi = () => navigate('/login');
     <NavLink className={classes.lin} to="/products" activeClassName="active">Products</NavLink>
 
     <NavLink className={classes.lin} to="/pricing" activeClassName="active">Pricing</NavLink>
+
     </nav>
       <div >
         <CustomBtn onClick={sign}>SIGN UP</CustomBtn>
