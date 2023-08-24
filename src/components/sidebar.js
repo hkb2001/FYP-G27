@@ -15,7 +15,7 @@ import help from '../assets/help.JPG'
 const styles = makeStyles((theme) => ({
 container:{
   background: "black",
-  width: "280px",
+  width: "300px",
   height: "560px",
   paddingBottom: "30px",
   marginBottom: "-30px"
@@ -23,7 +23,6 @@ container:{
 },
 dbuttonContainer :{
     height: "100px",
-   
 },
 dbtnimage: {
   width: "60px",
@@ -39,7 +38,7 @@ dbutton: {
     background: "black",
     color: "white",
     marginBottom: "10px",
-    width: "275px",
+    width: "265px",
     fontFamily: "Lato, sans-serif",
     fontWeight: 900,
     fontSize: "22px",
@@ -74,7 +73,7 @@ bottombutton: {
   color: "white",
   marginBottom: "-30px",
   marginTop: "240px",
-  width: "275px",
+  width: "265px",
   fontFamily: "Lato, sans-serif",
   fontWeight: 900,
   fontSize: "22px",
