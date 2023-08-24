@@ -1,16 +1,8 @@
 import React from "react";
-<<<<<<< Updated upstream
 import reg from './reg1.png';
 import signup from './signup.png';
 import reg from './reg1.png';
 import './Signup.css';
-
-function SignUp(){
-return(
-    <div class="parent clearfix">
-    <div class="bg-illustration">
-=======
-
 import { makeStyles } from "@mui/styles";
 
 import signup from '../assets/signup.png';
@@ -21,6 +13,7 @@ import goog from "../assets/google.png"
 import { CheckBox, Google } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+
 const useStyles = makeStyles((theme) => ({
   parentclear:{
 backgroundColor:"black",
@@ -32,7 +25,6 @@ height:'780px',
     borderRadius: '18px',
     marginRight: '40px',
     
->>>>>>> Stashed changes
    
 },
 container:{
@@ -297,6 +289,7 @@ tex1:{
 }
 
 }));
+
 function SignUp(){
   const classes = useStyles();
   const navigate=useNavigate()

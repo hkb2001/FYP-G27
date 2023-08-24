@@ -75,6 +75,6 @@ const ContentContainer = () => {
       </div>
     </div>
   );
-};
+};  
 
 export default ContentContainer;
