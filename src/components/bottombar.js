@@ -19,6 +19,7 @@ const styles = makeStyles((theme) => ({
       height: '350px',
       alignItems: 'flex-start', 
       
+      
     },
     logo: {
       width: "35px",

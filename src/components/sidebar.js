@@ -16,7 +16,9 @@ const styles = makeStyles((theme) => ({
 container:{
   background: "black",
   width: "280px",
-  height: "100vh",
+  height: "560px",
+  paddingBottom: "30px",
+  marginBottom: "-30px"
 
 },
 dbuttonContainer :{
@@ -70,8 +72,8 @@ bottombutton: {
   cursor: "pointer",
   background: "black",
   color: "white",
-  marginBottom: "10px",
-  marginTop: "200px",
+  marginBottom: "-30px",
+  marginTop: "240px",
   width: "275px",
   fontFamily: "Lato, sans-serif",
   fontWeight: 900,
@@ -115,10 +117,7 @@ function Sidebar() {
       <div className={classes.dbtntext}>Help</div>
       </div>
 
-      </div>
-
-
-   
+      </div>  
   )
 }
 

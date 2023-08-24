@@ -1,7 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
 import CustomBtn from '../CustomBtn';
-import {NavLink} from 'react-router-dom' 
+import {NavLink} from 'react-router-dom' ;
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -70,8 +71,7 @@ const ContentContainer = () => {
         We develop products to automate things in this fast-paced world by using cutting-edge technologies and methods
       </div>
       <div className={classes.btn}>
-        {/* <CustomBtn>Make ERD</CustomBtn> */}
-        <NavLink className={classes.lin} to="/sidebar" activeClassName="active">Make ERD</NavLink>
+        <NavLink className={classes.lin} to="/dashboard" activeClassName="active">Make ERD</NavLink>
       </div>
     </div>
   );

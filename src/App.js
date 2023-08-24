@@ -12,6 +12,7 @@ import Bottombar from './components/bottombar';
 import Products from './components/products';
 import Pricing from './components/pricing';
 import Sidebar from './components/sidebar';
+import Dashboard from './components/dashboard';
 
 
 const theme = createTheme({
@@ -73,6 +74,8 @@ function App() {
       <Route path='products' element={<Products/>}/>
       <Route path='pricing' element={<Pricing/>}/>
       <Route path='sidebar' element={<Sidebar/>}/>
+      <Route path='dashboard' element={<Dashboard/>}/>
+
       {/* <ContentContainer/>
       <Middlebar />
       <Bottombar /> */}
