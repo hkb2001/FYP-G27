@@ -5,12 +5,12 @@ import { Toolbar } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import {NavLink} from 'react-router-dom' 
 import CustomBtn from '../CustomBtn';
-<<<<<<< Updated upstream
+
 import { color, style } from '@mui/system';
 import Pricing from './pricing';
-=======
+
 import { useNavigate } from 'react-router-dom';
->>>>>>> Stashed changes
+
 
 const styles = makeStyles((theme) => ({
   bar: {

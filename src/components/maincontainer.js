@@ -1,8 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
 import CustomBtn from '../CustomBtn';
-import {NavLink} from 'react-router-dom' 
 
+import {NavLink} from 'react-router-dom' 
+import { useNavigate } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   contentContainer: {
@@ -60,7 +61,8 @@ const useStyles = makeStyles((theme) => ({
 
 const ContentContainer = () => {
   const classes = useStyles();
-
+  const navigate=useNavigate()
+  const sign = () => navigate('/signup');
   return (
     <div className={classes.contentContainer}>
       <div className={classes.heading}>
@@ -70,8 +72,12 @@ const ContentContainer = () => {
         We develop products to automate things in this fast-paced world by using cutting-edge technologies and methods
       </div>
       <div className={classes.btn}>
+
         {/* <CustomBtn>Make ERD</CustomBtn> */}
-        <NavLink className={classes.lin} to="/sidebar" activeClassName="active">Make ERD</NavLink>
+        
+
+        <CustomBtn onClick={sign}>Make ERD</CustomBtn>
+
       </div>
     </div>
   );

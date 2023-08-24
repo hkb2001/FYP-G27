@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     fontFamily: "Lato, sans-serif",
     textAlign: "center",
-    marginTop: "100px",
+    marginTop: "50px",
     margin: "auto",
     width: "350px",
     color: "white",
@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "20px",
     fontFamily: "Lato, sans-serif",
     width: "500px",
-    marginTop: "65px",
+    marginTop: "50px",
     margin: "auto",
     textAlign: "center",
     marginBottom: "30px",
@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
 
   cont: {
     backgroundColor: "black",
-    
+    height: "280px",
   },
 
   column: {
@@ -106,7 +106,6 @@ const useStyles = makeStyles((theme) => ({
   },
   cardCont: {
     backgroundColor: "white",
-   
   },
   space: {
     marginTop: "50px",
@@ -129,21 +128,20 @@ const useStyles = makeStyles((theme) => ({
     height: "80px",
     marginTop: "30px",
   },
- 
-  para:{
-    color:'grey',
+
+  para: {
+    color: "grey",
   },
- 
-  row1:{
-    marginLeft:'156px'
+
+  row1: {
+    marginLeft: "156px",
   },
   line: {
-    border: '1px solid #00ebeb',
-    width: "300px",
+    border: "1px solid #00ebeb",
+    width: "120px",
     marginBottom: "20px",
-    marginLeft: "35px"
-
-  }
+    marginLeft: "7px",
+  },
 }));
 
 function Features() {
@@ -164,12 +162,12 @@ function Features() {
           <div className={classes.heading}>Our Features</div>
           <div className={classes.space1}> </div>
           <div className={classes.head}>
-          <div className={classes.line}> </div>
-
+            <div className={classes.line}> </div>
           </div>
 
           <div className={classes.text}>
-          Transforming ideas into reality - our innovative feature revolutionizes the way you work
+            Transforming ideas into reality - our innovative feature
+            revolutionizes the way you work
           </div>
         </div>
         <div className={classes.cardCont}>
@@ -253,7 +251,8 @@ function Features() {
                   <h2>One Click Sharing</h2>
 
                   <div className={classes.para}>
-                  Allow you to distribute your content quickly and seamlessly, enhancing collaboration and communication
+                    Allow you to distribute your content quickly and seamlessly,
+                    enhancing collaboration and communication
                   </div>
                 </div>
               </div>
@@ -266,13 +265,13 @@ function Features() {
                   <h2>Quick and Easy</h2>
 
                   <div className={classes.para}>
-                  Experience a quick and easy solution that simplifies complex tasks ensuring efficient workflow. Just provide Text and Relax
+                    Experience a quick and easy solution that simplifies complex
+                    tasks ensuring efficient workflow. Just provide Text and
+                    Relax
                   </div>
                 </div>
               </div>
             </div>
-
-           
           </div>
         </div>
       </div>

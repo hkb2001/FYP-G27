@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     fontFamily: "Lato, sans-serif",
     textAlign: "center",
-    marginTop: "30px",
+    marginTop: "50px",
     margin: "auto",
     width: "350px",
     color: "white",
@@ -47,7 +47,6 @@ const useStyles = makeStyles((theme) => ({
     width: "750px",
     color: "#E7EBEB",
     marginBottom: "40px",
-
   },
 
   text: {
@@ -63,7 +62,6 @@ const useStyles = makeStyles((theme) => ({
 
   cont: {
     backgroundColor: "black",
-   
   },
 
   column: {
@@ -82,7 +80,6 @@ const useStyles = makeStyles((theme) => ({
   container: {
     padding: "0 16px",
   },
-
 
   title: {
     color: "grey",
@@ -106,7 +103,6 @@ const useStyles = makeStyles((theme) => ({
   },
   cardCont: {
     backgroundColor: "white",
-    
   },
   space: {
     marginTop: "50px",
@@ -141,17 +137,15 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   icons: {
-    marginLeft:'1000px',
-marginBottom:'10px'
-    
+    marginLeft: "1000px",
+    marginBottom: "10px",
   },
   line: {
-    border: '1px solid #00ebeb',
-    width: "300px",
-    marginBottom: "20px",
-    marginLeft: "35px"
-
-  }
+    border: "1px solid #00ebeb",
+    width: "120px",
+    marginBottom: "50px",
+    marginLeft: "3px",
+  },
 }));
 
 function About() {
@@ -172,8 +166,7 @@ function About() {
           <div className={classes.heading}>About Us</div>
           <div className={classes.space1}> </div>
           <div className={classes.head}>
-          <div className={classes.line}> </div>
-
+            <div className={classes.line}> </div>
           </div>
 
           <div className={classes.text}>
@@ -255,7 +248,6 @@ function About() {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </Box>

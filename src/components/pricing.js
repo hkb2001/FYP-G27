@@ -6,9 +6,6 @@ import { createTheme, ThemeProvider } from '@mui/material';
 import CustomBtn from '../CustomBtn';
 import Buy from './buy';
 
-const theme = createTheme({
-  // your theme configuration
-});
 
 const useStyles = makeStyles((theme) => ({
     space1: {
@@ -16,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
       },
       titleContainer: {
         width: "100%", /* Takes the full width of the screen */
-      height: "260px",
+      height: "280px",
       display: "flex",
       alignItems: "center",
       background: "black",
@@ -26,19 +23,17 @@ const useStyles = makeStyles((theme) => ({
       },
       title: {
         background: "black",
-        cursor: "pointer",
+        
         fontSize: "42px",
         fontWeight: "bold",
         fontFamily: "Lato, sans-serif",
         textAlign: "center",
         marginTop: "50px",
-        marginBottom: "20px",
+        marginBottom: "30px",
         margin: "auto",
         width: "350px",
         color: "white",
-      "&:hover": {
-        color: "#00EBEB",
-      },
+     
       },
       text: {
         fontSize: "20px",
@@ -51,9 +46,9 @@ const useStyles = makeStyles((theme) => ({
       },
       head: {
         border: '1px solid #00ebeb',
-        width: "300px",
+        width: "120px",
         marginBottom: "20px",
-        marginLeft: "10px"
+        marginLeft: "7px"
     
       },
   pricingContainer: {
