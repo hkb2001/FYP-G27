@@ -2,44 +2,40 @@ import { React, useState } from "react";
 import { TextField } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { useNavigate } from "react-router-dom";
-import { height, width } from "@mui/system";
-import CustomBtn from "../CustomBtn";
+import Sidebar from "./sidebar";
 const useStyles = makeStyles((theme) => ({
   main: {
-    height: "571px",
+    height: "590px",
     width: "100%",
     background: "grey",
   },
-  bgillus: {
-    position: "absolute",
-    height: "571px",
-    width: "200px",
-    backgroundColor: "black",
-    float: "left",
-  },
 
   container: {
-    width: "1050px",
+    width: "903px",
     backgroundColor: "#FAFAFA ",
     padding: "25px 30px",
-    float: "right",
-    height: "521px",
+   marginLeft:'300px',
+    height: "540px",
+   marginTop:'-590px'
   },
 
   namebar: {
     background: "white",
-    width: "1080px",
+    width: "963px",
     height: "50px",
     marginTop: "-45px",
+marginLeft:'-30px'
   },
 
   text: {
     fontSize: "20px",
     paddingTop: "10px",
-    marginRight: "930px",
+    marginRight: "860px",
   },
   count:{
-marginRight:'790px'
+marginLeft:'10px',
+width:'300px',
+textAlign:'left'
   },
   button:{
     alignItems: "center",
@@ -47,7 +43,7 @@ marginRight:'790px'
         height: "30px", 
         width: "140px",
         marginTop:'0px',
-        marginLeft:'830px',
+        marginLeft:'750px',
         boxSizing: "border-box",
         fontWeight: "bold",
         borderRadius: 4,
@@ -74,18 +70,14 @@ function QueryPage() {
     const words = text.trim().split(/\s+/).filter(Boolean);
     return words.length;
   };
-
+  
   const classes = useStyles();
   const navigate = useNavigate();
+  const load = () => navigate('/loader');
   return (
+    
     <div className={classes.main}>
-      <div className={classes.bgillus}>
-        <div className={classes.burgerbtn}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
+      <Sidebar />
       <div className={classes.container}>
         <div className={classes.namebar}>
           <p className={classes.text}>untitled</p>
@@ -94,7 +86,7 @@ function QueryPage() {
           <TextField
             sx={{
               marginTop: "30px",
-              width: 1000,
+              width: 900,
               height: 355,
               background: "white",
               border: "white",
@@ -111,9 +103,10 @@ function QueryPage() {
           <div className={classes.count}>
             {getWordCount()} words / {text.length} characters
           </div>
-          <button className={classes.button}>Create ERD</button>
-        </div>
-      </div>
+          <button onClick={load} className={classes.button}>Create ERD</button>
+       </div>
+   
+    </div>
     </div>
   );
 }
