@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
 const ContentContainer = () => {
   const classes = useStyles();
   const navigate=useNavigate()
-  const sign = () => navigate('/signup');
+  const dash = () => navigate('/dashboard');
   return (
     <div className={classes.contentContainer}>
       <div className={classes.heading}>
@@ -77,7 +77,7 @@ const ContentContainer = () => {
         {/* <CustomBtn>Make ERD</CustomBtn> */}
         
 
-        <CustomBtn onClick={sign}>Make ERD</CustomBtn>
+        <CustomBtn onClick={dash}>Make ERD</CustomBtn>
 
 
       </div>

@@ -3,6 +3,7 @@ import { makeStyles } from "@mui/styles";
 import help from "../assets/help.JPG"
 import Sidebar from "./sidebar";
 import add from '../assets/add.JPG'
+import { NavLink } from "react-router-dom";
  
 const styles = makeStyles((theme) => ({
     
@@ -78,7 +79,7 @@ const styles = makeStyles((theme) => ({
         display: "flex",
         // justifyContent: "center",
         // alignContent: "center"
-        display: "flex", // Make the whitebox a flex container
+        display: "flex",
         alignItems: "center",
         justifyContent: "center",
         cursor: "pointer",
@@ -97,7 +98,12 @@ const styles = makeStyles((theme) => ({
     projects:{
         display: "flex",
         flexDirection: "row"
-    }
+    },
+    lin:{
+        textDecoration: 'none',
+        color:'black'
+      }
+        
     }));
 
 
@@ -113,13 +119,17 @@ function Dashboard() {
                         <div className={classes.imgcontainer}>
                             <img className={classes.addimg} src={add} alt="" />
                         </div>
-                        <div className={classes.boxtext}>New Project</div>
+                        <NavLink className={classes.lin} activeClassName="active">
+                        <div className={classes.boxtext}>
+                           
+                            New Project</div>
+                            </NavLink>
                 </div>
-
+                <NavLink className={classes.lin} to="/query" activeClassName="active">
                <div className={classes.whitebox}>
                         <div className={classes.newtext}>ERD Generator</div>
                 </div>
-
+</NavLink>
                 <div className={classes.whitebox}>
                         <div className={classes.newtext}>School Management</div>
                 </div>

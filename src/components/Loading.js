@@ -43,9 +43,9 @@ function Loading() {
         
         <Typewriter
           words={["Extracting Entities", "Extracting Attributes", "Identifying Relationship", "Cardinality Generation"]}
-          typeSpeed={200}
+          typeSpeed={130}
           deleteSpeed={0}
-          delaySpeed={100}
+          delaySpeed={200}
         />
       </div>
     </div>
