@@ -1,0 +1,65 @@
+{
+  "entities": {
+    "Student": {
+      "attributes": {
+        "StudentID": {
+          "type": "int",
+          "autoIncrement": true,
+          "key": true
+        },
+        "FirstName": {
+          "type": "VARCHAR(50)",
+          "allowNull": false
+        },
+        "LastName": {
+          "type": "NVARCHAR(50)",
+          "allowNull": false
+        }
+      }
+    },
+    "Course": {
+      "attributes": {
+        "CourseID": {
+          "type": "int",
+          "autoIncrement": true,
+          "key": true
+        },
+        "CourseName": {
+          "type": "NVARCHAR(70)",
+          "allowNull": false
+        }
+      }
+    },
+    "Teacher": {
+      "attributes": {
+        "TeacherID": {
+          "type": "int",
+          "autoIncrement": true,
+          "key": true
+        },
+        "FirstName": {
+          "type": "NVARCHAR(50)",
+          "allowNull": false
+        },
+        "LastName": {
+          "type": "NVARCHAR(50)",
+          "allowNull": false
+        }
+      }
+    }
+  },
+  "relationships": [
+    {
+      "entity1": "Student",
+      "entity2": "Course",
+      "type": "Many-to-Many",
+      "cardinality": "M:M"
+    },
+    {
+      "entity1": "Student",
+      "entity2": "Teacher",
+      "type": "One-to-Many",
+      "cardinality": "1:M"
+    }
+  ]
+}
