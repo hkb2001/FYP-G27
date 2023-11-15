@@ -154,7 +154,7 @@ function Pricing() {
     <div variant="h4" className={classes.title}>Pricing Plans</div>
     <div className={classes.head}> </div>
     <div className={classes.space1}> </div>
-    <div className={classes.text}>Transforming ideas into reality - our innovative feature revolutionizes the way you work</div>
+    <div className={classes.text}>Tailor your experience with our flexible pricing plans, providing value and convenience to meet your specific needs and budget</div>
   </div>
       <div className={classes.pricingContainer}>
         <div className={classes.pricingList}>

@@ -43,14 +43,12 @@ const styles = makeStyles((theme) => ({
     },
     name: {
       color: "#00EBEB",
-      cursor: "pointer",
+      
       fontWeight: "bold",
       marginLeft: '30px',
       fontFamily: "'Lato', sans-serif",
       marginTop: "20px",
-      "&:hover": {
-        color: "#ffffff",
-      },
+      
     },
     subtitle: {
       fontFamily: "'Lato', sans-serif",
@@ -60,9 +58,7 @@ const styles = makeStyles((theme) => ({
 
       fontSize: "12px",
       width: '190px',
-      "&:hover": {
-        color: "#ffffff",
-      },
+      
     },
     note :{
       width: '550px',

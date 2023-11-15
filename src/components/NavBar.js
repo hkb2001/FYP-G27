@@ -26,26 +26,24 @@ const styles = makeStyles((theme) => ({
   logo: {
     width: "35px",
     backgroundColor: "#000000",
-    marginRight: "0px",
+    marginRight: "-20px",
     height: "35px",
   },
   titleContainer: {
     display: "flex",
     flexDirection: "column",
-    paddingRight: "370px",
+    paddingRight: "445px",
 
   },
   name: {
     color: "#00EBEB",
-    cursor: "pointer",
+    
     fontWeight: "bold",
     fontSize:'20px',
 
     fontFamily: "'Lato', sans-serif",
     textAlign: "left",
-    "&:hover": {
-      color: "#ffffff",
-    },
+    
     ['@media (max-width:10px)']: {
       paddingBottom: "1rem"
     }
@@ -55,9 +53,7 @@ const styles = makeStyles((theme) => ({
     color: "#00EBEB",
     textAlign: "left",
     fontSize: "12px",
-    "&:hover": {
-      color: "#ffffff",
-    },
+    
   },
   btn: {
     marginLeft: theme.spacing(2),

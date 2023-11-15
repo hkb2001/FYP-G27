@@ -153,13 +153,25 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "20px",
     marginLeft: "0px",
   },
+  head: {
+        border: '1px solid #00ebeb',
+        width: "120px",
+        marginBottom: "20px",
+        marginLeft: "5px"
+    
+      },
 }));
 
 function Products() {
   const classes = useStyles();
   return (
     <div className={classes.fullpage}>
-  
+  <div className={classes.titleContainer}>
+    <div variant="h4" className={classes.title}>Our Products</div>
+    <div className={classes.head}> </div>
+    <div className={classes.space1}> </div>
+    <div className={classes.text}>Discover and elevate your daily experiences with our premium product collection</div>
+  </div>
       
       <div className={classes.productContainer}>
         <div className={classes.productList}>

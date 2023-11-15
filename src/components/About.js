@@ -66,10 +66,10 @@ const useStyles = makeStyles((theme) => ({
 
   column: {
     float: "left",
-    width: "293px",
+    width: "320px",
     marginBottom: "20px",
     padding: "0 8px",
-    marginLeft: "4px",
+    marginLeft: "11px",
   },
 
   card: {
@@ -121,7 +121,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   img: {
-    width: "277px",
+    width: "305px",
     height: "325px",
     borderBottom: "5",
   },
@@ -144,7 +144,7 @@ const useStyles = makeStyles((theme) => ({
     border: "1px solid #00ebeb",
     width: "120px",
     marginBottom: "50px",
-    marginLeft: "3px",
+    marginLeft: "75px",
   },
 }));
 
