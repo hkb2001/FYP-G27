@@ -119,7 +119,7 @@ function Dashboard() {
                         <div className={classes.imgcontainer}>
                             <img className={classes.addimg} src={add} alt="" />
                         </div>
-                        <NavLink className={classes.lin} activeClassName="active">
+                        <NavLink className={classes.lin} to="/query" activeClassName="active">
                         <div className={classes.boxtext}>
                            
                             New Project</div>

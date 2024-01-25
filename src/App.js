@@ -16,6 +16,9 @@ import Sidebar from "./components/sidebar";
 
 import SignUp from "./components/SignUp";
 import Login from "./components/Login";
+import Dashboard from "./components/dashboard";
+import Query from "./components/Query"
+import ErdDashboad from "./components/erd_dashboard";
 
 const theme = createTheme({
   palette: {
@@ -73,6 +76,9 @@ function App() {
             <Route path="products" element={<Products />} />
             <Route path="pricing" element={<Pricing />} />
             <Route path="sidebar" element={<Sidebar />} />
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="query" element={<Query />} />
+            <Route path="erddashboard" element={<ErdDashboad />} />
             {/* <ContentContainer/>
       <Middlebar />
       <Bottombar /> */}

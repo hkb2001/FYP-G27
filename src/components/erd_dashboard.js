@@ -1,8 +1,10 @@
 import { React, useState } from "react";
-import { TextField } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "./sidebar";
+import ERDVisualization from "./ERDVisualization";
+import { NavLink } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   main: {
     height: "590px",
@@ -59,26 +61,23 @@ textAlign:'left'
         fontFamily: "'Lato', sans-serif",
   }
 }));
-function QueryPage() {
+function ErdDashboad() {
   const [text, setText] = useState("");
-  const classes = useStyles();
-  const navigate = useNavigate();
-
+//character count
   const handleTextChange = (event) => {
     setText(event.target.value);
   };
-
+//word count
   const getWordCount = () => {
     const words = text.trim().split(/\s+/).filter(Boolean);
     return words.length;
   };
-
-  const load = () => {
-    // Redirect to erd_dashboard.js
-    navigate('/erddashboard');
-  };
-
+  
+  const classes = useStyles();
+  const navigate = useNavigate();
+  const load = () => navigate('/loader');
   return (
+    
     <div className={classes.main}>
       <Sidebar />
       <div className={classes.container}>
@@ -86,33 +85,20 @@ function QueryPage() {
           <p className={classes.text}>untitled</p>
         </div>
         <div className={classes.query}>
-          <TextField
-            sx={{
-              marginTop: "30px",
-              width: 900,
-              height: 355,
-              background: "white",
-              border: "white",
-              borderRadius: 1,
-            }}
-            className={classes.text1}
-            variant="outlined"
-            placeholder="Paste your text here ..."
-            multiline
-            onChange={handleTextChange}
-            rows={14}
-            maxRows={50}
-          ></TextField>
+          <div>
+            <ERDVisualization/>
+          </div>
           <div className={classes.count}>
             {getWordCount()} words / {text.length} characters
           </div>
-          <button onClick={load} className={classes.button}>
-            Create ERD
-          </button>
-        </div>
-      </div>
+          <button onClick={load} className={classes.button}>Create ERD</button>
+       </div>
+       <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+          <Button style={{ backgroundColor: '#00EBEB', margin: '0 10px' }}>Save</Button>
+          <Button style={{ backgroundColor: '#00EBEB', margin: '0 10px' }}>Export</Button>
+          </div>
+    </div>
     </div>
   );
 }
-
-export default QueryPage;
+export default ErdDashboad;
