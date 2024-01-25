@@ -140,7 +140,7 @@ const useStyles = makeStyles((theme) => ({
     border: "1px solid #00ebeb",
     width: "120px",
     marginBottom: "20px",
-    marginLeft: "80px",
+    
   },
 }));
 

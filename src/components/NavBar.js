@@ -26,33 +26,39 @@ const styles = makeStyles((theme) => ({
   logo: {
     width: "35px",
     backgroundColor: "#000000",
-    marginRight: "-20px",
+    
+
     height: "35px",
   },
   titleContainer: {
     display: "flex",
     flexDirection: "column",
-    paddingRight: "445px",
+    paddingRight: "300px",
+    ['@media (max-width:780px)']: {
+      paddingRight: "0px"
+    },
+   
+    marginLeft:'10px'
 
   },
   name: {
     color: "#00EBEB",
     
     fontWeight: "bold",
-    fontSize:'20px',
-
-    fontFamily: "'Lato', sans-serif",
-    textAlign: "left",
     
-    ['@media (max-width:10px)']: {
-      paddingBottom: "1rem"
-    }
+    fontFamily: "'Lato', sans-serif",
+    marginTop: "10px",
+    textAlign:'left'
+    
   },
   subtitle: {
     fontFamily: "'Lato', sans-serif",
     color: "#00EBEB",
     textAlign: "left",
+   
+
     fontSize: "12px",
+    width: '190px',
     
   },
   btn: {

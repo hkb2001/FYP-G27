@@ -21,6 +21,10 @@ const useStyles = makeStyles((theme) => ({
    marginTop:'-590px'
   },
 
+  query:{
+    width:'100%',
+    height:'90%',
+  },
   namebar: {
     background: "white",
     width: "963px",
@@ -81,21 +85,17 @@ function ErdDashboad() {
     <div className={classes.main}>
       <Sidebar />
       <div className={classes.container}>
-        <div className={classes.namebar}>
-          <p className={classes.text}>untitled</p>
-        </div>
+        
         <div className={classes.query}>
-          <div>
+         
             <ERDVisualization/>
-          </div>
-          <div className={classes.count}>
-            {getWordCount()} words / {text.length} characters
-          </div>
-          <button onClick={load} className={classes.button}>Create ERD</button>
+          
+          
+          
        </div>
        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
           <Button style={{ backgroundColor: '#00EBEB', margin: '0 10px' }}>Save</Button>
-          <Button style={{ backgroundColor: '#00EBEB', margin: '0 10px' }}>Export</Button>
+          <Button style={{ backgroundColor: '#00EBEB', marginLeft:'100px' }}>Export</Button>
           </div>
     </div>
     </div>

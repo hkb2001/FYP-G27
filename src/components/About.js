@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
 
   column: {
     float: "left",
-    width: "320px",
+    width: "285px",
     marginBottom: "20px",
     padding: "0 8px",
     marginLeft: "11px",
@@ -121,7 +121,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   img: {
-    width: "305px",
+    width: "269px",
     height: "325px",
     borderBottom: "5",
   },
@@ -144,7 +144,7 @@ const useStyles = makeStyles((theme) => ({
     border: "1px solid #00ebeb",
     width: "120px",
     marginBottom: "50px",
-    marginLeft: "75px",
+    
   },
 }));
 
