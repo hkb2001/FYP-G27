@@ -9,6 +9,9 @@ import { Divider } from "@mui/material";
 import p1 from "../assets/p1.jpg";
 import p2 from "../assets/p2.jpg";
 import p3 from "../assets/p3.jpg";
+import i1 from "../assets/ERD.jpg";
+import i2 from "../assets/schema.jpg";
+import i3 from "../assets/EditTool.jpg";
 import { fontFamily, fontWeight } from "@mui/system";
 
 const theme = createTheme({
@@ -51,24 +54,24 @@ const theme = createTheme({
 const products = [
   {
     id: 1,
-    name: "Digital Clock",
+    name: "ERD Generation",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet. Et aliquam velit sed earum voluptate ut consequatur iure et quia corporis. Ea blanditiis magnam eos distinctio consectetur et fuga tempora. Ut earum sunt est ipsum modi sed enim culpa nam laboriosam quia. Aut omnis tempora aut rerum veritatis ut incidunt nesciunt et ratione velit.",
-    Image: p1,
+      "ERDify specializes in generating ERDs for databases using user input. It creates visually intuitive representations, highlighting entities, attributes, and relationships. The tool facilitates a streamlined development process by allowing seamless export of the generated ERD for integration into database design documentation",
+    Image: i1,
   },
   {
     id: 2,
-    name: "Database Software",
+    name: "Schema Generation",
     description:
-      "Praesent vel dolor non velit luctus volutpat.Lorem ipsum dolor sit amet. Et aliquam velit sed earum voluptate ut consequatur iure et quia corporis. Ea blanditiis magnam eos distinctio consectetur et fuga tempora. Ut earum sunt est ipsum modi sed enim culpa nam laboriosam quia. Aut omnis tempora aut rerum veritatis ut incidunt nesciunt et ratione velit.",
-    Image: p2,
+      "ERDify empowers users to effortlessly create dynamic schemas for different databases including SQL, MongoDB and graph. The tool intelligently adapts to diverse structures, supporting relational models, document-oriented designs, and graph-based representations. This ensures efficient and tailored schema creation for a variety of database paradigms",
+    Image: i2,
   },
   {
     id: 3,
-    name: "Weather Forecast",
+    name: "Editing Tool",
     description:
-      "Integer at lorem ullamcorper, congue ante vel, hendrerit ex.Lorem ipsum dolor sit amet. Et aliquam velit sed earum voluptate ut consequatur iure et quia corporis. Ea blanditiis magnam eos distinctio consectetur et fuga tempora. Ut earum sunt est ipsum modi sed enim culpa nam laboriosam quia. Aut omnis tempora aut rerum veritatis ut incidunt nesciunt et ratione velit.",
-    Image: p3,
+      "ERDify provides a user-friendly editing tool for effortless modification of Entity-Relationship Diagrams (ERD). Users can easily customize entities, attributes, and relationships, ensuring adaptability to evolving project requirements. The tool streamlines the ERD refinement process, offering a seamless experience for users to shape their database designs according to specific needs",
+    Image: i3,
   },
 ];
 
@@ -125,6 +128,8 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "'Lato', sans-serif",
     fontSize: "17px",
     lineHeight: 1.5,
+    justifyContent:'start'
+    
   },
   space1: {
     marginTop: "10px",
