@@ -1,0 +1,6 @@
+1. Run the training file
+It will train the models which you will import in the testing phase
+2. Run the get_entities file
+It will generate json file for testing
+2. Run the testing.py file
+The testing.py file will give the relationships between entities
