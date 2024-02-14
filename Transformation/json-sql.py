@@ -1,36 +1,34 @@
 import json
 from datetime import datetime
 
-# Read JSON data from file
+
+# Read JSON file
 json_file_path = "schema.json"
 with open(json_file_path, "r") as file:
-    json_data = json.load(file)
-
-
-def generate_sql_statements(json_data):
+    data = json.load(file)
+    
+def generate_sql_statements(data):
     sql_statements = []
-
-    # Keep track of created tables to avoid duplicate tables
     created_tables = set()
 
-    # Create tables for entities
-    for entity_name, entity_data in json_data["entities"].items():
+    
+    for entity_data in data["entities"]:
+        entity_name = entity_data["entity_name"]
+        entity_attributes = entity_data["attributes"]
+    
         create_table_sql = f"CREATE TABLE {entity_name} (\n"
-
-        # attributes checking and adding
-        for attribute_name, attribute_data in entity_data["attributes"].items():
-            attribute_type = attribute_data["type"]
-
-            # map according to SQL server
-            if attribute_type == "int":
-                sql_server_type = "INT"
-            elif attribute_type.startswith("string"):
-                size = attribute_data.get("size", 255) 
-                sql_server_type = f"NVARCHAR({size})"
+    
+        for attribute_data in entity_attributes:
+            attribute_name = attribute_data["attribute_name"]
+            attribute_type = attribute_data["attribute_type"]
+        
+        # attributes mapping to SQL Server data types
+            if attribute_type == "integer":
+                attribute_type = "INT"
+            elif attribute_type == "string":
+                attribute_type = "VARCHAR(255)"
             else:
                 sql_server_type = attribute_type
-
-            # check for keys, auto-increment and default
             constraints = []
             if attribute_data.get("key"):
                 constraints.append("PRIMARY KEY")
@@ -47,13 +45,11 @@ def generate_sql_statements(json_data):
             create_table_sql += (
                 f"  {attribute_name} {sql_server_type} {' '.join(constraints)},\n"
             )
-
-        # remove comma at the end of the attributes and table
+    
         create_table_sql = create_table_sql.rstrip(",\n") + "\n);\n"
         sql_statements.append(create_table_sql)
 
-    # Create tables for relationships
-    for relationship_data in json_data.get("relationships", []):
+    for relationship_data in data.get("relationships", []):
         entity1 = relationship_data["entity1"]
         entity2 = relationship_data["entity2"]
         relationship_type = relationship_data["type"]
@@ -134,11 +130,14 @@ def generate_sql_statements(json_data):
 
     return sql_statements
 
-# output the created schema in .sql file 
-output_file_path = "output.sql"
+
+# output in .sql file
+output_file_path = "script.sql"
 with open(output_file_path, "w") as output_file:
-    for statement in generate_sql_statements(json_data):
-        output_file.write(f"/****** Script Date: {datetime.now().strftime('%m-%d-%Y %I:%M:%S %p')} ******/\n\n")
+    for statement in generate_sql_statements(data):
+        output_file.write(
+            f"/****** Script Date: {datetime.now().strftime('%m-%d-%Y %I:%M:%S %p')} ******/\n\n"
+        )
         output_file.write(statement)
-       
+
 print(f"SQL statements have been written to {output_file_path}")

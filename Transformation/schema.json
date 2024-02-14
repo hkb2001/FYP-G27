@@ -1,65 +1,78 @@
 {
-  "entities": {
-    "Student": {
-      "attributes": {
-        "StudentID": {
-          "type": "int",
+  "entities": [
+    {
+      "entity_name": "Student",
+      "attributes": [
+        {
+          "attribute_name": "ID",
+          "attribute_type": "int",
+          "key": true,
           "autoIncrement": true,
-          "key": true
+          "allowNull": false,
+          "default": ""
         },
-        "FirstName": {
-          "type": "VARCHAR(50)",
-          "allowNull": false
-        },
-        "LastName": {
-          "type": "NVARCHAR(50)",
-          "allowNull": false
+        {
+          "attribute_name": "Age",
+          "attribute_type": "int",
+          "key": false,
+          "allowNull": false,
+          "default": ""
         }
-      }
+      ]
     },
-    "Course": {
-      "attributes": {
-        "CourseID": {
-          "type": "int",
+    {
+      "entity_name": "Teacher",
+      "attributes": [
+        {
+          "attribute_name": "ID",
+          "attribute_type": "int",
+          "key": true,
           "autoIncrement": true,
-          "key": true
+          "allowNull": false,
+          "default": ""
         },
-        "CourseName": {
-          "type": "NVARCHAR(70)",
-          "allowNull": false
+        {
+          "attribute_name": "Name",
+          "attribute_type": "NVARCHAR(100)",
+          "key": false,
+          "allowNull": true,
+          "default": ""
         }
-      }
+      ]
     },
-    "Teacher": {
-      "attributes": {
-        "TeacherID": {
-          "type": "int",
+    {
+      "entity_name": "Department",
+      "attributes": [
+        {
+          "attribute_name": "ID",
+          "attribute_type": "int",
+          "key": true,
           "autoIncrement": true,
-          "key": true
+          "allowNull": false,
+          "default": ""
         },
-        "FirstName": {
-          "type": "NVARCHAR(50)",
-          "allowNull": false
-        },
-        "LastName": {
-          "type": "NVARCHAR(50)",
-          "allowNull": false
+        {
+          "attribute_name": "Name",
+          "attribute_type": "NVARCHAR(100)",
+          "key": false,
+          "allowNull": false,
+          "default": ""
         }
-      }
+      ]
     }
-  },
+  ],
   "relationships": [
     {
       "entity1": "Student",
-      "entity2": "Course",
+      "entity2": "Teacher",
       "type": "Many-to-Many",
       "cardinality": "M:M"
     },
     {
       "entity1": "Student",
-      "entity2": "Teacher",
-      "type": "One-to-Many",
-      "cardinality": "1:M"
+      "entity2": "Department",
+      "type":"One-to-Many",
+      "cardinality":"1:M"
     }
   ]
 }
