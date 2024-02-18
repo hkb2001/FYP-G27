@@ -22,41 +22,6 @@ function ERDVisualization() {
     createDiagram();
   }, [tables]);
 
-  // function createCustomShape(x, y, tableName, entityNames) {
-  //   const shape = new joint.shapes.basic.Rect({
-  //     position: { x, y },
-  //     size: { width: 250, height: 150 },
-  //     attrs: {
-  //       rect: { fill: 'white', stroke: 'black', 'stroke-width': 2 },
-  //       text: { text: tableName, 'font-size': 14, 'font-weight': 'bold' },
-  //     },
-    
-  //   });
-
-  //   let entityNamesArray = [];
-
-  //   // Check if entityNames is a string, then split it
-  //   if (typeof entityNames === 'string') {
-  //     entityNamesArray = entityNames.split(',');
-  //   } else if (Array.isArray(entityNames)) {
-  //     entityNamesArray = entityNames;
-  //   }
-
-  //   const contentText = new joint.shapes.basic.TextBlock({
-  //     position: { x: x + 5, y: y + 30 },
-  //     size: { width: 40, height: 40 },
-  //     attrs: {
-  //       text: {
-  //         text: `Entities:\n${entityNamesArray.join('\n')}`, // Convert back to an array
-  //         'font-size': 12,
-  //       },
-  //     },
-  //   });
-
-  //   shape.embed(contentText);
-  //   return shape;
-  // }
-
   function createCustomShape(x, y, headerText, bodyText) {
     // Create a custom headered rectangle shape
     const shape = new joint.shapes.standard.HeaderedRectangle({
