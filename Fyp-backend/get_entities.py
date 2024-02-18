@@ -1,26 +1,40 @@
-!pip install -U pip setuptools wheel
-!pip install -U spacy
-!python -m spacy download en_core_web_sm
 import spacy
 nlp = spacy.load("en_core_web_sm")
 import json
 
 
-# function to finf entites
+# extract entities
 def find_entity(text):
   entities =[]
   seen_nouns= set()
   doc =nlp(text)
-    # Iterate through the tokens in the processed document
+  skip_check =True
+  # Iterate through the tokens in the processed document
   for token in doc:
+        
       # Check if the token is a noun and not in the set already
-      if token.pos_ == "NOUN" and token.text not in seen_nouns:
+      if token.pos_ == "NOUN" and token.lemma_ not in seen_nouns:
+
           # Append the noun to the list and add it to the set
+          # Get the next token
+          if token.dep_=="compound" and token.i < len(doc) - 1:
+
+            next_token = doc[token.i + 1]
+            if next_token.pos_ == "NOUN":
+                # add the noun and skip the next dependent part
+                entities.append(token.lemma_)
+                seen_nouns.add(token.lemma_)
+                # Skip the next token as it's already been processed
+                continue
+            else:
+              continue
+          
           entities.append(token.lemma_)
-          seen_nouns.add(token.text)
+          seen_nouns.add(token.lemma_)
 
 
   return entities
+
 
 # to create tuples for testing phase
 def ents_tuples(check):

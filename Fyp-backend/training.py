@@ -62,5 +62,5 @@ for epoch in range(3):  # You can adjust the number of epochs
         optimizer.step()
 
 # Save the fine-tuned model
-model.save_pretrained("fine_tuned_bert_with_entities")
+model.save_pretrained("/model/fine_tuned_bert_with_entities")
 tokenizer.save_pretrained("/model/fine_tuned_tokenizer")
