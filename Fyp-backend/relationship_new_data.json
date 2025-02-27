@@ -1,0 +1,1878 @@
+[
+    {
+        "sentence": "The cardinality relationship between book and author is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 40
+            },
+            {
+                "start": 46,
+                "end": 51
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between employee and department is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 44
+            },
+            {
+                "start": 50,
+                "end": 59
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between customer and order is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 44
+            },
+            {
+                "start": 50,
+                "end": 54
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between actor and movie is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 51
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between student and course is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 54
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between professor and department is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 45
+            },
+            {
+                "start": 51,
+                "end": 60
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between student and advisor is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 55
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between course and instructor is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 57
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between department and staff is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 46
+            },
+            {
+                "start": 52,
+                "end": 56
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between student and club is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 52
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between course and textbook is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 55
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between researcher and project is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 46
+            },
+            {
+                "start": 52,
+                "end": 58
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between student and internship is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 58
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between faculty and committee is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 57
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between student and enrollment is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 58
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between professor and research is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 45
+            },
+            {
+                "start": 51,
+                "end": 58
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between student and grade is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 53
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between course and prerequisite is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 59
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between department and faculty is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 46
+            },
+            {
+                "start": 52,
+                "end": 58
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between student and transcript is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 58
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between course and assignment is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 57
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between researcher and publication is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 46
+            },
+            {
+                "start": 52,
+                "end": 62
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between student and advisor is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 55
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between faculty and committee is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 57
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between book and author is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 40
+            },
+            {
+                "start": 46,
+                "end": 51
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between book and genre is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 40
+            },
+            {
+                "start": 46,
+                "end": 50
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between library and book is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 52
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between patron and checkout is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 55
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between author and award is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 52
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between book and edition is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 40
+            },
+            {
+                "start": 46,
+                "end": 52
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between library and staff is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 53
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between patron and reservation is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 58
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between book and language is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 40
+            },
+            {
+                "start": 46,
+                "end": 53
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between patron and fine is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 51
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between patron and favorite_genre is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 61
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between book and publisher is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 40
+            },
+            {
+                "start": 46,
+                "end": 54
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between library and event is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 53
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between patron and membership is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 57
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between book and review is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 40
+            },
+            {
+                "start": 46,
+                "end": 51
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between library and inventory is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 57
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between patron and wishlist is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 55
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between book and award is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 40
+            },
+            {
+                "start": 46,
+                "end": 50
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between library and floor_plan is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 58
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between patron and borrowed_item is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 60
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between customer and order is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 44
+            },
+            {
+                "start": 50,
+                "end": 54
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between product and category is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 56
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between customer and review is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 44
+            },
+            {
+                "start": 50,
+                "end": 55
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between seller and product is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 54
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between cart and item is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 40
+            },
+            {
+                "start": 46,
+                "end": 49
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between customer and wishlist is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 44
+            },
+            {
+                "start": 50,
+                "end": 57
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between order and shipment is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 54
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between customer and return is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 44
+            },
+            {
+                "start": 50,
+                "end": 55
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between seller and coupon is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 53
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between product and inventory is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 57
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between customer and wishlist is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 44
+            },
+            {
+                "start": 50,
+                "end": 57
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between product and promotion is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 57
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between order and payment is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 53
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between seller and rating is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 53
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between cart and discount is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 40
+            },
+            {
+                "start": 46,
+                "end": 53
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between customer and address is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 44
+            },
+            {
+                "start": 50,
+                "end": 56
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between order and refund is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 52
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between seller and inventory is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 56
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between product and tag is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 51
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between customer and notification is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 44
+            },
+            {
+                "start": 50,
+                "end": 61
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between athlete and team is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 52
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between match and venue is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 51
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between player and position is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 55
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between coach and team is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 50
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between event and athlete is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 53
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between tournament and organizer is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 46
+            },
+            {
+                "start": 52,
+                "end": 60
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between team and sponsor is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 40
+            },
+            {
+                "start": 46,
+                "end": 52
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between athlete and award is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 53
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between team and fan is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 40
+            },
+            {
+                "start": 46,
+                "end": 48
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between match and commentator is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 57
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between athlete and medal is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 53
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between team and coach is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 40
+            },
+            {
+                "start": 46,
+                "end": 50
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between tournament and venue is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 46
+            },
+            {
+                "start": 52,
+                "end": 56
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between player and injury is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 53
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between team and championship is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 40
+            },
+            {
+                "start": 46,
+                "end": 57
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between athlete and endorsement is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 59
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between team and rivalry is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 40
+            },
+            {
+                "start": 46,
+                "end": 52
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between athlete and training_session is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 64
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between match and highlight is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 55
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between player and equipment is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 56
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between patient and doctor is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 54
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between hospital and department is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 44
+            },
+            {
+                "start": 50,
+                "end": 59
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between patient and prescription is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 60
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between nurse and patient is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 53
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between department and equipment is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 46
+            },
+            {
+                "start": 52,
+                "end": 60
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between patient and test_result is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 59
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between hospital and staff is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 44
+            },
+            {
+                "start": 50,
+                "end": 54
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between doctor and specialty is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 56
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between patient and admission is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 57
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between pharmacist and medication is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 46
+            },
+            {
+                "start": 52,
+                "end": 61
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between patient and appointment is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 59
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between hospital and insurance_provider is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 44
+            },
+            {
+                "start": 50,
+                "end": 67
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between nurse and shift is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 51
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between doctor and research_study is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 61
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between patient and medical_history is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 63
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between hospital and ambulance is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 44
+            },
+            {
+                "start": 50,
+                "end": 58
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between surgeon and surgery is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 55
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between department and training_session is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 46
+            },
+            {
+                "start": 52,
+                "end": 67
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between patient and diet_plan is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 57
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between hospital and maintenance_request is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 44
+            },
+            {
+                "start": 50,
+                "end": 68
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between passenger and flight is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 45
+            },
+            {
+                "start": 51,
+                "end": 56
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between vehicle and driver is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 54
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between route and bus_stop is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 54
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between train and station is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 53
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between passenger and booking is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 45
+            },
+            {
+                "start": 51,
+                "end": 57
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between cargo_ship and port is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 46
+            },
+            {
+                "start": 52,
+                "end": 55
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between driver and vehicle_inspection is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 65
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between flight and crew_member is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 58
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between taxi and customer is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 40
+            },
+            {
+                "start": 46,
+                "end": 53
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between subway and platform is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 42
+            },
+            {
+                "start": 48,
+                "end": 55
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between bicycle and rental_station is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 62
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between ship and port is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 40
+            },
+            {
+                "start": 46,
+                "end": 49
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between truck and shipment is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 54
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between train and ticket is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 52
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between car and parking_lot is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 39
+            },
+            {
+                "start": 45,
+                "end": 55
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between airplane and maintenance_crew is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 44
+            },
+            {
+                "start": 50,
+                "end": 65
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between bus and passenger is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 39
+            },
+            {
+                "start": 45,
+                "end": 53
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between electric_scooter and charging_station is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 52
+            },
+            {
+                "start": 58,
+                "end": 73
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between helicopter and landing_pad is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 46
+            },
+            {
+                "start": 52,
+                "end": 62
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between railway and signal is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 43
+            },
+            {
+                "start": 49,
+                "end": 54
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between guest and reservation is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 57
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between hotel and room is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 50
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between customer and loyalty_program is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 44
+            },
+            {
+                "start": 50,
+                "end": 64
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between staff and shift is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 51
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between conference_room and event is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 51
+            },
+            {
+                "start": 57,
+                "end": 61
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between hotel_chain and franchise is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 47
+            },
+            {
+                "start": 53,
+                "end": 61
+            }
+        ],
+        "label": "one-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between guest and feedback is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 54
+            }
+        ],
+        "label": "one-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between room_service and order is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 48
+            },
+            {
+                "start": 54,
+                "end": 58
+            }
+        ],
+        "label": "many-to-one"
+    },
+    {
+        "sentence": "The cardinality relationship between hotel and amenity is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 53
+            }
+        ],
+        "label": "many-to-many"
+    },
+    {
+        "sentence": "The cardinality relationship between guest and membership is",
+        "entities": [
+            {
+                "start": 37,
+                "end": 41
+            },
+            {
+                "start": 47,
+                "end": 56
+            }
+        ],
+        "label": "one-to-one"
+    }
+]

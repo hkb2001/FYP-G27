@@ -1,0 +1,1129 @@
+[
+    {
+        "entity": "student",
+        "attributes": ["Name", "Age", "ID", "Address", "Major", "GPA", "EnrollmentYear", "Email", "Phone"]
+    },
+    {
+        "entity": "professor",
+        "attributes": ["Name", "Age", "ID", "Department", "Email", "Phone", "OfficeLocation"]
+    },
+    {
+        "entity": "course",
+        "attributes": ["CourseCode", "Title", "Instructor", "Department", "Schedule", "Room"]
+    },
+    {
+        "entity": "department",
+        "attributes": ["DepartmentCode", "Name", "Chairperson", "OfficeLocation", "Phone"]
+    },
+    {
+        "entity": "library",
+        "attributes": ["LibraryCode", "Name", "Location", "Librarian", "OperatingHours"]
+    },
+    {
+        "entity": "staff",
+        "attributes": ["Name", "Age", "ID", "Department", "Email", "Phone", "OfficeLocation"]
+    },
+    {
+        "entity": "facility",
+        "attributes": ["FacilityCode", "Name", "Location", "Manager", "OperatingHours"]
+    },
+    {
+        "entity": "research_project",
+        "attributes": ["ProjectCode", "Title", "LeadResearcher", "Department", "StartDate", "EndDate"]
+    },
+    {
+        "entity": "event",
+        "attributes": ["EventCode", "Title", "Organizer", "Location", "Date", "Time"]
+    },
+    {
+        "entity": "alumni",
+        "attributes": ["Name", "Age", "GraduationYear", "DegreeEarned", "Major", "Email", "Phone"]
+    },
+    {
+        "entity": "staff_member",
+        "attributes": ["Name", "Age", "ID", "Department", "Email", "Phone", "OfficeLocation"]
+    },
+    {
+        "entity": "building",
+        "attributes": ["BuildingCode", "Name", "Location", "Manager", "Capacity", "HoursOfOperation"]
+    },
+    {
+        "entity": "research_area",
+        "attributes": ["AreaCode", "Name", "Department", "LeadResearcher", "Description"]
+    },
+    {
+        "entity": "club",
+        "attributes": ["ClubCode", "Name", "Advisor", "MeetingSchedule", "Location"]
+    },
+    {
+        "entity": "project_team",
+        "attributes": ["TeamCode", "Name", "Lead", "Members", "ProjectCode", "MeetingSchedule"]
+    },
+    {
+        "entity": "scholarship",
+        "attributes": ["ScholarshipCode", "Name", "Amount", "EligibilityCriteria", "ApplicationDeadline"]
+    },
+    {
+        "entity": "course_material",
+        "attributes": ["MaterialCode", "Title", "Author", "CourseCode", "Availability", "Format"]
+    },
+    {
+        "entity": "transportation",
+        "attributes": ["VehicleID", "Type", "Driver", "Capacity", "Route", "DepartureTime"]
+    },
+    {
+        "entity": "employee",
+        "attributes": ["Name", "Age", "ID", "Department", "Email", "Phone", "Position"]
+    },
+    {
+        "entity": "conference",
+        "attributes": ["ConferenceCode", "Title", "Organizer", "Location", "Date", "Time"]
+    },
+    {
+        "entity": "patient",
+        "attributes": ["Name", "Age", "ID", "Address", "MedicalHistory", "AdmissionDate", "PrimaryDoctor", "InsuranceProvider", "EmergencyContact"]
+    },
+    {
+        "entity": "doctor",
+        "attributes": ["Name", "Age", "ID", "Specialty", "LicenseNumber", "EmploymentStatus", "Email", "Phone"]
+    },
+    {
+        "entity": "nurse",
+        "attributes": ["Name", "Age", "ID", "Department", "LicenseNumber", "Shift", "Email", "Phone"]
+    },
+    {
+        "entity": "hospital_room",
+        "attributes": ["RoomNumber", "Floor", "Capacity", "OccupancyStatus", "Facilities", "SpecialRequirements"]
+    },
+    {
+        "entity": "medical_test",
+        "attributes": ["TestCode", "Name", "Doctor", "Patient", "TestDate", "Result"]
+    },
+    {
+        "entity": "pharmacist",
+        "attributes": ["Name", "Age", "ID", "Department", "LicenseNumber", "Email", "Phone"]
+    },
+    {
+        "entity": "administrative_staff",
+        "attributes": ["Name", "Age", "ID", "Department", "Position", "Email", "Phone"]
+    },
+    {
+        "entity": "ambulance",
+        "attributes": ["VehicleID", "Type", "Driver", "Capacity", "EmergencyEquipment", "Route"]
+    },
+    {
+        "entity": "hospital_department",
+        "attributes": ["DepartmentCode", "Name", "HeadDoctor", "Location", "Phone"]
+    },
+    {
+        "entity": "appointment",
+        "attributes": ["AppointmentID", "Doctor", "Patient", "Date", "Time", "Status"]
+    },
+    {
+        "entity": "medical_supply",
+        "attributes": ["SupplyCode", "Name", "Type", "StockLevel", "Supplier", "UnitPrice"]
+    },
+    {
+        "entity": "billing",
+        "attributes": ["BillID", "Patient", "BillingDate", "TotalAmount", "DueDate", "PaymentStatus"]
+    },
+    {
+        "entity": "emergency_contact",
+        "attributes": ["Name", "Relationship", "Phone", "Email"]
+    },
+    {
+        "entity": "vital_signs",
+        "attributes": ["ReadingID", "Patient", "Doctor", "Date", "Time", "HeartRate", "BloodPressure", "Temperature"]
+    },
+    {
+        "entity": "surgery",
+        "attributes": ["SurgeryID", "Doctor", "Patient", "Date", "Time", "Procedure", "OperatingRoom"]
+    },
+    {
+        "entity": "insurance_plan",
+        "attributes": ["PlanID", "Name", "CoverageType", "CoverageLimit", "Premium"]
+    },
+    {
+        "entity": "visitor",
+        "attributes": ["VisitorID", "Name", "RelationToPatient", "VisitDate", "VisitTime", "ContactNumber"]
+    },
+    {
+        "entity": "dietitian",
+        "attributes": ["Name", "Age", "ID", "Department", "LicenseNumber", "Email", "Phone"]
+    },
+    {
+        "entity": "health_record",
+        "attributes": ["RecordID", "Patient", "Doctor", "Date", "Diagnosis", "Prescription", "FollowUpInstructions"]
+    },
+    {
+        "entity": "morgue",
+        "attributes": ["BodyID", "DeceasedName", "DateOfDeath", "CauseOfDeath", "Location", "ContactPerson"]
+    },
+    {
+        "entity": "athlete",
+        "attributes": ["Name", "Age", "ID", "Team", "Position", "JerseyNumber", "Height", "Weight", "Birthdate"]
+    },
+    {
+        "entity": "coach",
+        "attributes": ["Name", "Age", "ID", "Team", "Specialty", "Experience", "Email", "Phone"]
+    },
+    {
+        "entity": "team",
+        "attributes": ["TeamCode", "Name", "Sport", "Coach", "HomeCity", "EstablishmentYear", "HomeStadium"]
+    },
+    {
+        "entity": "game",
+        "attributes": ["GameID", "Date", "Time", "Location", "HomeTeam", "AwayTeam", "Result", "Attendance"]
+    },
+    {
+        "entity": "stadium",
+        "attributes": ["StadiumCode", "Name", "Location", "Capacity", "SurfaceType", "Facilities"]
+    },
+    {
+        "entity": "league",
+        "attributes": ["LeagueCode", "Name", "Sport", "EstablishmentYear", "Commissioner", "Headquarters"]
+    },
+    {
+        "entity": "referee",
+        "attributes": ["Name", "Age", "ID", "Experience", "Sport", "Email", "Phone"]
+    },
+    {
+        "entity": "fan",
+        "attributes": ["FanID", "Name", "Age", "Team", "MembershipLevel", "Email", "Phone"]
+    },
+    {
+        "entity": "tournament",
+        "attributes": ["TournamentCode", "Name", "Sport", "StartDate", "EndDate", "Location", "PrizeMoney"]
+    },
+    {
+        "entity": "athlete_performance",
+        "attributes": ["PerformanceID", "Athlete", "Game", "PointsScored", "Assists", "Rebounds", "Steals", "Blocks"]
+    },
+    {
+        "entity": "sponsor",
+        "attributes": ["SponsorID", "Name", "Industry", "Team", "ContractStartDate", "ContractEndDate", "SponsorshipAmount"]
+    },
+    {
+        "entity": "sports_journalist",
+        "attributes": ["JournalistID", "Name", "Age", "MediaOutlet", "CoverageSport", "Email", "Phone"]
+    },
+    {
+        "entity": "training_facility",
+        "attributes": ["FacilityCode", "Name", "Location", "Sport", "Capacity", "Equipment", "OperatingHours"]
+    },
+    {
+        "entity": "medal",
+        "attributes": ["MedalID", "Athlete", "Tournament", "Sport", "MedalType", "DateAwarded"]
+    },
+    {
+        "entity": "ticket",
+        "attributes": ["TicketID", "Game", "SeatNumber", "Price", "PurchaseDate", "PurchaseMethod"]
+    },
+    {
+        "entity": "sports_analyst",
+        "attributes": ["AnalystID", "Name", "Age", "Expertise", "CoverageSport", "Email", "Phone"]
+    },
+    {
+        "entity": "hall_of_fame",
+        "attributes": ["MemberID", "Athlete", "Sport", "YearInducted", "Achievements", "InductionLocation"]
+    },
+    {
+        "entity": "cheerleader",
+        "attributes": ["CheerleaderID", "Name", "Team", "PerformanceStyle", "UniformColor", "Email", "Phone"]
+    },
+    {
+        "entity": "broadcast_network",
+        "attributes": ["NetworkID", "Name", "Sport", "CoverageRights", "Headquarters", "BroadcastSchedule"]
+    },
+    {
+        "entity": "sports_equipment",
+        "attributes": ["EquipmentID", "Name", "Sport", "Manufacturer", "UsageStatus", "PurchaseDate", "Condition"]
+    },
+    {
+        "entity": "customer",
+        "attributes": ["CustomerID", "Name", "Email", "Phone", "Address", "AccountBalance", "RegistrationDate", "PreferredPaymentMethod"]
+    },
+    {
+        "entity": "product",
+        "attributes": ["ProductID", "Name", "Category", "Brand", "Price", "StockAvailability", "Description", "Discount"]
+    },
+    {
+        "entity": "order",
+        "attributes": ["OrderID", "Customer", "Products", "OrderDate", "DeliveryAddress", "TotalAmount", "OrderStatus", "PaymentStatus"]
+    },
+    {
+        "entity": "seller",
+        "attributes": ["SellerID", "Name", "Email", "Phone", "Address", "RegistrationDate", "Rating", "Specialty"]
+    },
+    {
+        "entity": "payment",
+        "attributes": ["PaymentID", "Order", "PaymentDate", "PaymentMethod", "Amount", "TransactionID", "PaymentStatus"]
+    },
+    {
+        "entity": "shopping_cart",
+        "attributes": ["CartID", "Customer", "Products", "TotalItems", "TotalAmount", "CartStatus"]
+    },
+    {
+        "entity": "review",
+        "attributes": ["ReviewID", "Customer", "Product", "Rating", "Comment", "ReviewDate"]
+    },
+    {
+        "entity": "wishlist",
+        "attributes": ["WishlistID", "Customer", "Products"]
+    },
+    {
+        "entity": "shipping",
+        "attributes": ["ShippingID", "Order", "ShippingAddress", "ShippedDate", "EstimatedDeliveryDate", "ShippingStatus"]
+    },
+    {
+        "entity": "discount_coupon",
+        "attributes": ["CouponCode", "DiscountPercentage", "MinimumPurchaseAmount", "ExpirationDate", "UsageLimit"]
+    },
+    {
+        "entity": "return_request",
+        "attributes": ["RequestID", "Order", "Customer", "Reason", "RequestDate", "Status", "RefundAmount"]
+    },
+    {
+        "entity": "supplier",
+        "attributes": ["SupplierID", "Name", "Email", "Phone", "Address", "ProductCategories", "DeliveryTime"]
+    },
+    {
+        "entity": "affiliate_partner",
+        "attributes": ["PartnerID", "Name", "Email", "Phone", "AffiliateCode", "CommissionRate", "PayoutThreshold"]
+    },
+    {
+        "entity": "loyalty_program",
+        "attributes": ["ProgramID", "Name", "DiscountRate", "PointsExpiration", "MembershipTier", "Benefits"]
+    },
+    {
+        "entity": "exchange",
+        "attributes": ["ExchangeID", "Order", "Customer", "ExchangeDate", "ExchangeProducts", "ExchangeStatus"]
+    },
+    {
+        "entity": "gift_card",
+        "attributes": ["CardID", "RecipientName", "SenderName", "Amount", "ExpirationDate", "CardStatus"]
+    },
+    {
+        "entity": "promotion",
+        "attributes": ["PromotionID", "Name", "DiscountPercentage", "StartDate", "EndDate", "ApplicableProducts"]
+    },
+    {
+        "entity": "chat_support",
+        "attributes": ["ChatID", "Customer", "SupportAgent", "ChatDate", "ChatDuration", "ChatTranscript"]
+    },
+    {
+        "entity": "order_history",
+        "attributes": ["HistoryID", "Order", "Status", "UpdatedDate", "UpdatedBy"]
+    },
+    {
+        "entity": "virtual_store",
+        "attributes": ["StoreID", "Name", "Location", "OpeningHours", "ContactNumber", "Website", "StoreRating"]
+    },
+    {
+        "entity": "vehicle",
+        "attributes": ["VehicleID", "Type", "Make", "Model", "Year", "LicensePlate", "Color", "Capacity", "FuelType"]
+    },
+    {
+        "entity": "driver",
+        "attributes": ["DriverID", "Name", "LicenseNumber", "Age", "ContactNumber", "Email", "ExperienceYears", "Vehicle"]
+    },
+    {
+        "entity": "route",
+        "attributes": ["RouteID", "StartLocation", "EndLocation", "Distance", "EstimatedTime", "Stops", "TransportMode"]
+    },
+    {
+        "entity": "passenger",
+        "attributes": ["PassengerID", "Name", "Age", "ContactNumber", "Email", "PreferredTransportMode"]
+    },
+    {
+        "entity": "ticket",
+        "attributes": ["TicketID", "Passenger", "Route", "DepartureTime", "ArrivalTime", "SeatNumber", "Fare"]
+    },
+    {
+        "entity": "transport_company",
+        "attributes": ["CompanyID", "Name", "LicenseNumber", "ContactNumber", "Email", "Location", "FleetSize"]
+    },
+    {
+        "entity": "maintenance_record",
+        "attributes": ["RecordID", "Vehicle", "MaintenanceType", "MaintenanceDate", "Cost", "Details"]
+    },
+    {
+        "entity": "schedule",
+        "attributes": ["ScheduleID", "Route", "DepartureTime", "ArrivalTime", "DaysOfWeek", "Driver", "Vehicle"]
+    },
+    {
+        "entity": "transport_hub",
+        "attributes": ["HubID", "Name", "Location", "Facilities", "OperatingHours", "ContactNumber"]
+    },
+    {
+        "entity": "cargo",
+        "attributes": ["CargoID", "Description", "Weight", "Dimensions", "Sender", "Receiver", "Route", "EstimatedDeliveryTime"]
+    },
+    {
+        "entity": "station",
+        "attributes": ["StationID", "Name", "Location", "Facilities", "OperatingHours", "ContactNumber"]
+    },
+    {
+        "entity": "insurance",
+        "attributes": ["InsuranceID", "Vehicle", "CoverageType", "CoverageAmount", "Premium", "ExpirationDate"]
+    },
+    {
+        "entity": "tracking_system",
+        "attributes": ["SystemID", "Vehicle", "InstallationDate", "Status", "LocationHistory", "LastUpdate"]
+    },
+    {
+        "entity": "booking",
+        "attributes": ["BookingID", "Passenger", "Route", "DepartureTime", "SeatNumber", "BookingDate", "Status"]
+    },
+    {
+        "entity": "fuel_record",
+        "attributes": ["RecordID", "Vehicle", "FuelType", "FuelAmount", "Cost", "FillDate"]
+    },
+    {
+        "entity": "airline",
+        "attributes": ["AirlineID", "Name", "FleetSize", "Headquarters", "ContactNumber", "Website", "Ratings"]
+    },
+    {
+        "entity": "traffic_control",
+        "attributes": ["ControlID", "Location", "ControlType", "Staff", "OperatingHours", "ContactNumber"]
+    },
+    {
+        "entity": "rental_agency",
+        "attributes": ["AgencyID", "Name", "Location", "FleetSize", "ContactNumber", "Email", "RentalRates"]
+    },
+    {
+        "entity": "shuttle_service",
+        "attributes": ["ShuttleID", "Name", "Route", "OperatingHours", "Capacity", "ContactNumber"]
+    },
+    {
+        "entity": "bicycle",
+        "attributes": ["BicycleID", "Type", "Make", "Model", "Year", "Color", "Condition", "Availability"]
+    },{
+        "entity": "airline",
+        "attributes": ["AirlineCode", "Name", "FleetSize", "Headquarters", "ContactNumber", "Website", "Ratings"]
+    },
+    {
+        "entity": "flight",
+        "attributes": ["FlightNumber", "Airline", "DepartureAirport", "ArrivalAirport", "DepartureTime", "ArrivalTime", "AircraftType", "SeatCapacity", "TicketPrice"]
+    },
+    {
+        "entity": "passenger",
+        "attributes": ["PassengerID", "Name", "Age", "ContactNumber", "Email", "FrequentFlyerStatus", "MembershipTier"]
+    },
+    {
+        "entity": "crew_member",
+        "attributes": ["CrewID", "Name", "Position", "ContactNumber", "Email", "CrewType", "BaseAirport"]
+    },
+    {
+        "entity": "reservation",
+        "attributes": ["ReservationID", "Passenger", "Flight", "SeatNumber", "BookingDate", "Status", "TicketPrice"]
+    },
+    {
+        "entity": "aircraft",
+        "attributes": ["AircraftID", "AircraftType", "Manufacturer", "Model", "Year", "Capacity", "OperationalStatus"]
+    },
+    {
+        "entity": "airport",
+        "attributes": ["AirportCode", "Name", "Location", "Terminal", "ContactNumber", "Facilities", "OperatingHours"]
+    },
+    {
+        "entity": "baggage",
+        "attributes": ["BaggageID", "Passenger", "Flight", "Weight", "Size", "TagNumber", "Status"]
+    },
+    {
+        "entity": "loyalty_program",
+        "attributes": ["ProgramID", "Name", "DiscountRate", "PointsExpiration", "MembershipTier", "Benefits"]
+    },
+    {
+        "entity": "maintenance_record",
+        "attributes": ["RecordID", "Aircraft", "MaintenanceType", "MaintenanceDate", "Cost", "Details"]
+    },
+    {
+        "entity": "ticket",
+        "attributes": ["TicketNumber", "Passenger", "Flight", "SeatNumber", "IssueDate", "TicketPrice", "Status"]
+    },
+    {
+        "entity": "in-flight_service",
+        "attributes": ["ServiceID", "Flight", "ServiceType", "ServiceDate", "Description", "Rating"]
+    },
+    {
+        "entity": "cabin_class",
+        "attributes": ["ClassID", "Flight", "ClassName", "SeatCapacity", "TicketPrice", "Amenities"]
+    },
+    {
+        "entity": "route",
+        "attributes": ["RouteID", "DepartureAirport", "ArrivalAirport", "Distance", "EstimatedTime", "Stops", "Airline"]
+    },
+    {
+        "entity": "airline_staff",
+        "attributes": ["StaffID", "Name", "Position", "ContactNumber", "Email", "BaseAirport", "EmploymentStatus"]
+    },
+    {
+        "entity": "flight_status",
+        "attributes": ["StatusID", "Flight", "StatusCode", "StatusDescription", "UpdateTime"]
+    },
+    {
+        "entity": "meal_option",
+        "attributes": ["MealID", "Flight", "OptionName", "Description", "Price"]
+    },
+    {
+        "entity": "ground_service",
+        "attributes": ["ServiceID", "Airport", "ServiceType", "Description", "Provider", "Cost"]
+    },
+    {
+        "entity": "aircraft_maintenance_log",
+        "attributes": ["LogID", "Aircraft", "MaintenanceType", "LogDate", "Details"]
+    },
+    {
+        "entity": "aircraft_schedule",
+        "attributes": ["ScheduleID", "Aircraft", "DepartureTime", "ArrivalTime", "Route", "Status"]
+    },
+    {
+        "entity": "customer",
+        "attributes": ["CustomerID", "Name", "Email", "Phone", "Address", "AccountBalance", "RegistrationDate", "PreferredPaymentMethod"]
+    },
+    {
+        "entity": "product",
+        "attributes": ["ProductID", "Name", "Category", "Brand", "Price", "StockAvailability", "Description", "Discount"]
+    },
+    {
+        "entity": "order",
+        "attributes": ["OrderID", "Customer", "Products", "OrderDate", "DeliveryAddress", "TotalAmount", "OrderStatus", "PaymentStatus"]
+    },
+    {
+        "entity": "seller",
+        "attributes": ["SellerID", "Name", "Email", "Phone", "Address", "RegistrationDate", "Rating", "Specialty"]
+    },
+    {
+        "entity": "payment",
+        "attributes": ["PaymentID", "Order", "PaymentDate", "PaymentMethod", "Amount", "TransactionID", "PaymentStatus"]
+    },
+    {
+        "entity": "shopping_cart",
+        "attributes": ["CartID", "Customer", "Products", "TotalItems", "TotalAmount", "CartStatus"]
+    },
+    {
+        "entity": "review",
+        "attributes": ["ReviewID", "Customer", "Product", "Rating", "Comment", "ReviewDate"]
+    },
+    {
+        "entity": "wishlist",
+        "attributes": ["WishlistID", "Customer", "Products"]
+    },
+    {
+        "entity": "shipping",
+        "attributes": ["ShippingID", "Order", "ShippingAddress", "ShippedDate", "EstimatedDeliveryDate", "ShippingStatus"]
+    },
+    {
+        "entity": "discount_coupon",
+        "attributes": ["CouponCode", "DiscountPercentage", "MinimumPurchaseAmount", "ExpirationDate", "UsageLimit"]
+    },
+    {
+        "entity": "employee",
+        "attributes": ["EmployeeID", "Name", "Role", "Department", "Email", "Phone", "Manager"]
+    },
+    {
+        "entity": "project",
+        "attributes": ["ProjectID", "Name", "Description", "Manager", "StartDate", "EndDate", "Status", "Budget"]
+    },
+    {
+        "entity": "task",
+        "attributes": ["TaskID", "Project", "Description", "Assignee", "DueDate", "Priority", "Status"]
+    },
+    {
+        "entity": "technology",
+        "attributes": ["TechID", "Name", "Description", "Category", "Vendor", "Version", "ReleaseDate"]
+    },
+    {
+        "entity": "server",
+        "attributes": ["ServerID", "Hostname", "IP", "OperatingSystem", "Location", "Status", "CPU", "RAM", "Storage"]
+    },
+    {
+        "entity": "database",
+        "attributes": ["DatabaseID", "Name", "Description", "Server", "DBMS", "Size", "BackupSchedule"]
+    },
+    {
+        "entity": "network",
+        "attributes": ["NetworkID", "Name", "Description", "Type", "Devices", "Bandwidth", "Status"]
+    },
+    {
+        "entity": "software",
+        "attributes": ["SoftwareID", "Name", "Description", "Category", "Vendor", "Version", "LicenseType"]
+    },
+    {
+        "entity": "incident",
+        "attributes": ["IncidentID", "Summary", "Description", "Reporter", "Assignee", "Priority", "Status", "Resolution"]
+    },
+    {
+        "entity": "user_account",
+        "attributes": ["UserID", "Username", "Email", "Role", "Department", "Status", "LastLogin"]
+    },
+    {
+        "entity": "access_control",
+        "attributes": ["ControlID", "Resource", "User", "AccessLevel", "GrantDate", "ExpirationDate"]
+    },
+    {
+        "entity": "backup",
+        "attributes": ["BackupID", "Type", "Source", "Destination", "Frequency", "LastBackup", "Status"]
+    },
+    {
+        "entity": "security_policy",
+        "attributes": ["PolicyID", "Name", "Description", "Scope", "EnforcementLevel", "LastUpdated"]
+    },
+    {
+        "entity": "website",
+        "attributes": ["WebsiteID", "URL", "Title", "Description", "Owner", "CreationDate", "Status"]
+    },
+    {
+        "entity": "data_center",
+        "attributes": ["CenterID", "Location", "Capacity", "Status", "PowerRedundancy", "CoolingSystem"]
+    },
+    {
+        "entity": "release",
+        "attributes": ["ReleaseID", "Name", "Description", "Version", "ReleaseDate", "Status", "IssuesResolved"]
+    },
+    {
+        "entity": "configuration_item",
+        "attributes": ["CIID", "Name", "Description", "Type", "Owner", "Location", "Status"]
+    },
+    {
+        "entity": "cloud_service",
+        "attributes": ["ServiceID", "Name", "Description", "Provider", "ServiceType", "Status", "UsageCost"]
+    },
+    {
+        "entity": "policy_violation",
+        "attributes": ["ViolationID", "Policy", "Resource", "User", "ViolationDate", "ViolationDetails"]
+    },
+    {
+        "entity": "employee",
+        "attributes": ["EmployeeID", "Name", "Position", "Department", "Email", "Phone", "Manager"]
+    },
+    {
+        "entity": "department",
+        "attributes": ["DepartmentID", "Name", "Manager", "Location", "Budget", "EmployeeCount"]
+    },
+    {
+        "entity": "project",
+        "attributes": ["ProjectID", "Name", "Description", "Manager", "StartDate", "EndDate", "Status", "Budget"]
+    },
+    {
+        "entity": "client",
+        "attributes": ["ClientID", "Name", "ContactPerson", "Email", "Phone", "Address", "Industry"]
+    },
+    {
+        "entity": "task",
+        "attributes": ["TaskID", "Project", "Description", "Assignee", "DueDate", "Priority", "Status"]
+    },
+    {
+        "entity": "meeting",
+        "attributes": ["MeetingID", "Title", "Description", "Date", "Time", "Location", "Organizer", "Attendees"]
+    },
+    {
+        "entity": "document",
+        "attributes": ["DocumentID", "Title", "Type", "Author", "CreationDate", "LastModifiedDate", "Location"]
+    },
+    {
+        "entity": "financial_report",
+        "attributes": ["ReportID", "Title", "Type", "Period", "Author", "CreationDate", "LastModifiedDate"]
+    },
+    {
+        "entity": "vendor",
+        "attributes": ["VendorID", "Name", "ContactPerson", "Email", "Phone", "Address", "Products"]
+    },
+    {
+        "entity": "training_session",
+        "attributes": ["SessionID", "Title", "Description", "Trainer", "Date", "Time", "Location", "Attendees"]
+    },
+    {
+        "entity": "policy",
+        "attributes": ["PolicyID", "Title", "Description", "Category", "Author", "ApprovalDate", "EffectiveDate"]
+    },
+    {
+        "entity": "benefits_package",
+        "attributes": ["PackageID", "Name", "Description", "Coverage", "Cost", "EnrollmentPeriod", "ContactPerson"]
+    },
+    {
+        "entity": "expense_report",
+        "attributes": ["ReportID", "Title", "Description", "Employee", "SubmissionDate", "ApprovalStatus", "TotalAmount"]
+    },
+    {
+        "entity": "audit_log",
+        "attributes": ["LogID", "Action", "Timestamp", "User", "Description", "AffectedEntity"]
+    },
+    {
+        "entity": "job_position",
+        "attributes": ["PositionID", "Title", "Description", "Department", "Responsibilities", "Requirements", "SalaryRange"]
+    },
+    {
+        "entity": "facility",
+        "attributes": ["FacilityID", "Name", "Location", "Capacity", "Usage", "MaintenanceSchedule", "ContactPerson"]
+    },
+    {
+        "entity": "inventory_item",
+        "attributes": ["ItemID", "Name", "Description", "Category", "Quantity", "UnitPrice", "Location"]
+    },
+    {
+        "entity": "company_vehicle",
+        "attributes": ["VehicleID", "Type", "Make", "Model", "Year", "LicensePlate", "Usage", "MaintenanceSchedule"]
+    },
+    {
+        "entity": "milestone",
+        "attributes": ["MilestoneID", "Project", "Title", "Description", "DueDate", "Status", "Assignee"]
+    },
+    {
+        "entity": "insurance_policy",
+        "attributes": ["PolicyID", "Title", "Type", "Coverage", "Premium", "StartCoverageDate", "EndCoverageDate"]
+    },
+    {
+        "entity": "patient",
+        "attributes": ["PatientID", "Name", "Gender", "DateOfBirth", "Address", "Phone", "InsuranceProvider", "MedicalHistory"]
+    },
+    {
+        "entity": "doctor",
+        "attributes": ["DoctorID", "Name", "Gender", "Specialty", "Education", "ExperienceYears", "Phone", "Email"]
+    },
+    {
+        "entity": "nurse",
+        "attributes": ["NurseID", "Name", "Gender", "Department", "ExperienceYears", "Phone", "Email"]
+    },
+    {
+        "entity": "appointment",
+        "attributes": ["AppointmentID", "Patient", "Doctor", "DateTime", "Duration", "Reason", "Status"]
+    },
+    {
+        "entity": "department",
+        "attributes": ["DepartmentID", "Name", "HeadDoctor", "Location", "Phone", "Capacity", "Services"]
+    },
+    {
+        "entity": "medicine",
+        "attributes": ["MedicineID", "Name", "Manufacturer", "Type", "Dosage", "Price", "Stock"]
+    },
+    {
+        "entity": "bed",
+        "attributes": ["BedID", "Department", "OccupancyStatus", "Patient", "AdmissionDate", "DischargeDate"]
+    },
+    {
+        "entity": "surgery",
+        "attributes": ["SurgeryID", "Patient", "Doctor", "DateTime", "Type", "Status", "Notes"]
+    },
+    {
+        "entity": "lab_test",
+        "attributes": ["TestID", "Patient", "Doctor", "DateTime", "Type", "Result", "Status"]
+    },
+    {
+        "entity": "billing",
+        "attributes": ["BillingID", "Patient", "TotalAmount", "PaymentStatus", "BillingDate", "DueDate"]
+    },
+    {
+        "entity": "ward",
+        "attributes": ["WardID", "Department", "WardType", "Capacity", "OccupancyStatus", "Nurse"]
+    },
+    {
+        "entity": "emergency_contact",
+        "attributes": ["ContactID", "Patient", "Name", "Relationship", "Phone"]
+    },
+    {
+        "entity": "medical_equipment",
+        "attributes": ["EquipmentID", "Name", "Manufacturer", "Type", "Quantity", "Condition", "LastMaintenance"]
+    },
+    {
+        "entity": "blood_bank",
+        "attributes": ["BloodBankID", "Location", "BloodType", "QuantityAvailable", "LastRefillDate"]
+    },
+    {
+        "entity": "prescription",
+        "attributes": ["PrescriptionID", "Patient", "Doctor", "Medicines", "Dosage", "Instructions", "Date"]
+    },
+    {
+        "entity": "vital_signs",
+        "attributes": ["VitalSignsID", "Patient", "DateTime", "Temperature", "BloodPressure", "HeartRate", "RespiratoryRate"]
+    },
+    {
+        "entity": "insurance_policy",
+        "attributes": ["PolicyID", "Patient", "InsuranceProvider", "PolicyNumber", "Coverage", "ExpirationDate"]
+    },
+    {
+        "entity": "consultation",
+        "attributes": ["ConsultationID", "Patient", "Doctor", "DateTime", "Duration", "Reason", "Diagnosis"]
+    },
+    {
+        "entity": "health_record",
+        "attributes": ["RecordID", "Patient", "Doctor", "DateTime", "Notes", "Diagnosis", "Prescriptions", "LabTests"]
+    },
+    {
+        "entity": "athlete",
+        "attributes": ["AthleteID", "Name", "Age", "Gender", "Nationality", "Sport", "Team", "Position"]
+    },
+    {
+        "entity": "coach",
+        "attributes": ["CoachID", "Name", "Age", "Gender", "Nationality", "Sport", "Team", "ExperienceYears"]
+    },
+    {
+        "entity": "team",
+        "attributes": ["TeamID", "Name", "Sport", "League", "Country", "Coach", "HomeVenue", "FoundedYear"]
+    },
+    {
+        "entity": "match",
+        "attributes": ["MatchID", "Team1", "Team2", "Sport", "Venue", "Date", "Time", "Result"]
+    },
+    {
+        "entity": "tournament",
+        "attributes": ["TournamentID", "Name", "Sport", "Organizer", "StartDate", "EndDate", "Location", "PrizeMoney"]
+    },
+    {
+        "entity": "venue",
+        "attributes": ["VenueID", "Name", "Location", "Capacity", "SurfaceType", "Owner", "Contact"]
+    },
+    {
+        "entity": "medal",
+        "attributes": ["MedalID", "Athlete", "Sport", "Event", "MedalType", "Date", "Location"]
+    },
+    {
+        "entity": "training_session",
+        "attributes": ["SessionID", "Athlete", "Coach", "Sport", "Venue", "Date", "Time", "Duration"]
+    },
+    {
+        "entity": "record",
+        "attributes": ["RecordID", "Athlete", "Sport", "Event", "RecordType", "RecordValue", "Date", "Location"]
+    },
+    {
+        "entity": "sponsor",
+        "attributes": ["SponsorID", "Name", "Sport", "Team", "SponsorType", "Duration", "Contact"]
+    },
+    {
+        "entity": "commentator",
+        "attributes": ["CommentatorID", "Name", "Age", "Gender", "Nationality", "Sport", "ExperienceYears", "MediaOutlet"]
+    },
+    {
+        "entity": "league",
+        "attributes": ["LeagueID", "Name", "Sport", "Country", "Format", "StartDate", "EndDate", "Champion"]
+    },
+    {
+        "entity": "ticket",
+        "attributes": ["TicketID", "Match", "Venue", "SeatNumber", "Price", "TicketType", "PurchaseDate", "Status"]
+    },
+    {
+        "entity": "broadcast",
+        "attributes": ["BroadcastID", "Match", "Venue", "Date", "Time", "BroadcastChannel", "Viewership"]
+    },
+    {
+        "entity": "injury",
+        "attributes": ["InjuryID", "Athlete", "Sport", "Description", "Date", "RecoveryStatus"]
+    },
+    {
+        "entity": "referee",
+        "attributes": ["RefereeID", "Name", "Age", "Gender", "Nationality", "Sport", "ExperienceYears", "Certification"]
+    },
+    {
+        "entity": "fan",
+        "attributes": ["FanID", "Name", "Age", "Gender", "Nationality", "FavoriteTeam", "MembershipType", "Email"]
+    },
+    {
+        "entity": "merchandise",
+        "attributes": ["MerchandiseID", "Name", "Type", "Description", "Price", "Availability", "Team", "Sport"]
+    },
+    {
+        "entity": "commentary",
+        "attributes": ["CommentaryID", "Match", "Commentator", "DateTime", "Text"]
+    },
+    {
+        "entity": "stadium",
+        "attributes": ["StadiumID", "Name", "Location", "Capacity", "SurfaceType", "Owner", "Contact"]
+    },
+    {
+        "entity": "customer",
+        "attributes": ["CustomerID", "Name", "Gender", "DateOfBirth", "Address", "Phone", "Email", "AccountType"]
+    },
+    {
+        "entity": "account",
+        "attributes": ["AccountNumber", "Customer", "AccountType", "Balance", "Status", "OpenDate", "Branch"]
+    },
+    {
+        "entity": "transaction",
+        "attributes": ["TransactionID", "Account", "Type", "Amount", "Date", "Description"]
+    },
+    {
+        "entity": "branch",
+        "attributes": ["BranchID", "Name", "Location", "Manager", "PhoneNumber", "OpeningDate", "OperatingHours"]
+    },
+    {
+        "entity": "loan",
+        "attributes": ["LoanID", "Customer", "Type", "Amount", "InterestRate", "Term", "Status", "ApprovalDate"]
+    },
+    {
+        "entity": "card",
+        "attributes": ["CardNumber", "Account", "Type", "Issuer", "ExpirationDate", "CVV", "Status"]
+    },
+    {
+        "entity": "atm",
+        "attributes": ["ATMID", "Location", "Status", "CashBalance", "InstallationDate", "LastMaintenance"]
+    },
+    {
+        "entity": "deposit",
+        "attributes": ["DepositID", "Account", "Amount", "Date", "Teller", "DepositType"]
+    },
+    {
+        "entity": "withdrawal",
+        "attributes": ["WithdrawalID", "Account", "Amount", "Date", "ATM", "TransactionType"]
+    },
+    {
+        "entity": "credit_score",
+        "attributes": ["CustomerID", "Score", "Date", "Status"]
+    },
+    {
+        "entity": "payment",
+        "attributes": ["PaymentID", "Account", "Recipient", "Amount", "Date", "Description", "Status"]
+    },
+    {
+        "entity": "notification",
+        "attributes": ["NotificationID", "Customer", "Type", "Date", "Content"]
+    },
+    {
+        "entity": "interest_rate",
+        "attributes": ["Type", "Rate", "EffectiveDate", "ExpirationDate"]
+    },
+    {
+        "entity": "bill",
+        "attributes": ["BillID", "Customer", "Type", "Amount", "DueDate", "Status"]
+    },
+    {
+        "entity": "insurance_policy",
+        "attributes": ["PolicyID", "Customer", "Type", "Coverage", "Premium", "StartDate", "EndDate", "Status"]
+    },
+    {
+        "entity": "transfer",
+        "attributes": ["TransferID", "SenderAccount", "RecipientAccount", "Amount", "Date", "Description", "Status"]
+    },
+    {
+        "entity": "cheque",
+        "attributes": ["ChequeNumber", "Account", "Recipient", "Amount", "Date", "Status"]
+    },
+    {
+        "entity": "security",
+        "attributes": ["SecurityID", "Account", "Type", "Symbol", "Quantity", "PurchaseDate", "PurchasePrice"]
+    },
+    {
+        "entity": "loan_payment",
+        "attributes": ["PaymentID", "Loan", "Amount", "Date", "Status"]
+    },
+    {
+        "entity": "statement",
+        "attributes": ["StatementID", "Account", "StartDate", "EndDate", "Transactions", "Balance", "Status"]
+    },
+    {
+        "entity": "category",
+        "attributes": ["CategoryID", "Name", "ParentCategory", "Description", "NumberOfProducts"]
+    },
+    {
+        "entity": "promotion",
+        "attributes": ["PromotionID", "Name", "Description", "Discount", "StartDate", "EndDate", "Status"]
+    },
+    {
+        "entity": "shipping",
+        "attributes": ["ShippingID", "Order", "ShippingMethod", "TrackingNumber", "Status", "ExpectedDeliveryDate"]
+    },
+    {
+        "entity": "invoice",
+        "attributes": ["InvoiceID", "Order", "Amount", "Date", "Status"]
+    },
+    {
+        "entity": "refund",
+        "attributes": ["RefundID", "Order", "Amount", "Date", "Reason", "Status"]
+    },
+    {
+        "entity": "subscription",
+        "attributes": ["SubscriptionID", "Customer", "Product", "StartDate", "EndDate", "Status"]
+    },
+    {
+        "entity": "seller",
+        "attributes": ["SellerID", "Name", "Email", "Phone", "Address", "Rating", "RegistrationDate", "LastLogin"]
+    },
+    {
+        "entity": "inventory",
+        "attributes": ["InventoryID", "Seller", "Product", "StockQuantity", "Price", "DateAdded", "LastModified"]
+    },
+    {
+        "entity": "return",
+        "attributes": ["ReturnID", "Order", "Items", "Reason", "Status", "ReturnDate"]
+    },
+    {
+        "entity": "message",
+        "attributes": ["MessageID", "Sender", "Recipient", "Subject", "Content", "Date", "Status"]
+    },
+    {
+        "entity": "transaction",
+        "attributes": ["TransactionID", "Order", "Amount", "Type", "Date", "Status"]
+    },
+    {
+        "entity": "customer",
+        "attributes": ["CustomerID", "Name", "Email", "Phone", "Address", "DateOfBirth", "RegistrationDate", "LastContact"]
+    },
+    {
+        "entity": "car",
+        "attributes": ["CarID", "Make", "Model", "Year", "Color", "Mileage", "Price", "Condition"]
+    },
+    {
+        "entity": "salesperson",
+        "attributes": ["SalespersonID", "Name", "Email", "Phone", "EmployeeID", "HireDate", "CommissionRate"]
+    },
+    {
+        "entity": "sale",
+        "attributes": ["SaleID", "Customer", "Car", "Salesperson", "SaleDate", "Price", "PaymentMethod", "Status"]
+    },
+    {
+        "entity": "test_drive",
+        "attributes": ["TestDriveID", "Customer", "Car", "Salesperson", "TestDriveDate", "Status", "Feedback"]
+    },
+    {
+        "entity": "dealership",
+        "attributes": ["DealershipID", "Name", "Location", "Phone", "Manager", "OpenDate", "OperatingHours"]
+    },
+    {
+        "entity": "payment",
+        "attributes": ["PaymentID", "Sale", "Amount", "PaymentDate", "PaymentMethod", "Status"]
+    },
+    {
+        "entity": "inventory",
+        "attributes": ["InventoryID", "Car", "Dealership", "ArrivalDate", "Condition", "Price", "Availability"]
+    },
+    {
+        "entity": "trade_in",
+        "attributes": ["TradeInID", "Customer", "Car", "TradeInValue", "TradeInDate", "Status"]
+    },
+    {
+        "entity": "service_appointment",
+        "attributes": ["AppointmentID", "Customer", "Car", "ServiceDate", "ServiceType", "Status", "Notes"]
+    },
+    {
+        "entity": "insurance",
+        "attributes": ["InsuranceID", "Customer", "Car", "PolicyNumber", "InsuranceProvider", "Coverage", "ExpirationDate"]
+    },
+    {
+        "entity": "loan_application",
+        "attributes": ["ApplicationID", "Customer", "Car", "LoanAmount", "LoanTerm", "InterestRate", "Status"]
+    },
+    {
+        "entity": "repair",
+        "attributes": ["RepairID", "Car", "Description", "RepairDate", "Status", "RepairCost"]
+    },
+    {
+        "entity": "loan",
+        "attributes": ["LoanID", "Customer", "Car", "LoanAmount", "InterestRate", "LoanTerm", "MonthlyPayment", "Status"]
+    },
+    {
+        "entity": "property",
+        "attributes": ["PropertyID", "Type", "Address", "City", "State", "ZipCode", "Price", "Area"]
+    },
+    {
+        "entity": "listing",
+        "attributes": ["ListingID", "Property", "Agent", "Status", "ListPrice", "ListDate", "ExpirationDate"]
+    },
+    {
+        "entity": "agent",
+        "attributes": ["AgentID", "Name", "Email", "Phone", "LicenseNumber", "Agency", "ExperienceYears"]
+    },
+    {
+        "entity": "buyer",
+        "attributes": ["BuyerID", "Name", "Email", "Phone", "Budget", "PreApproved", "PreferredLocation"]
+    },
+    {
+        "entity": "seller",
+        "attributes": ["SellerID", "Name", "Email", "Phone", "PropertyID", "ListedDate", "ContractExpiration"]
+    },
+    {
+        "entity": "contract",
+        "attributes": ["ContractID", "Listing", "Buyer", "Seller", "OfferPrice", "OfferDate", "AcceptanceDate"]
+    },
+    {
+        "entity": "open_house",
+        "attributes": ["OpenHouseID", "Listing", "Date", "Time", "Agent", "Location"]
+    },
+    {
+        "entity": "rental",
+        "attributes": ["RentalID", "Property", "Agent", "Tenant", "MonthlyRent", "LeaseTerm", "StartDate", "EndDate"]
+    },
+    {
+        "entity": "inspection",
+        "attributes": ["InspectionID", "Property", "Inspector", "Date", "Time", "Notes"]
+    },
+    {
+        "entity": "mortgage",
+        "attributes": ["MortgageID", "Buyer", "Property", "LoanAmount", "InterestRate", "Term", "MonthlyPayment"]
+    },
+    {
+        "entity": "appraisal",
+        "attributes": ["AppraisalID", "Property", "Appraiser", "AppraisedValue", "Date"]
+    },
+    {
+        "entity": "development",
+        "attributes": ["DevelopmentID", "Name", "Location", "Builder", "CompletionDate", "Units", "Status"]
+    },
+    {
+        "entity": "landlord",
+        "attributes": ["LandlordID", "Name", "Email", "Phone", "Property", "LeasedDate", "ContractExpiration"]
+    },
+    {
+        "entity": "tenant",
+        "attributes": ["TenantID", "Name", "Email", "Phone", "CurrentProperty", "LeaseStartDate", "LeaseEndDate"]
+    },
+    {
+        "entity": "title_search",
+        "attributes": ["SearchID", "Property", "SearchDate", "SearchResult", "TitleCompany"]
+    },
+    {
+        "entity": "escrow",
+        "attributes": ["EscrowID", "Contract", "Buyer", "Seller", "Amount", "Status"]
+    },
+    {
+        "entity": "zoning",
+        "attributes": ["ZoningID", "Property", "ZoningType", "Description", "ZoningCode"]
+    },
+    {
+        "entity": "survey",
+        "attributes": ["SurveyID", "Property", "Surveyor", "SurveyDate", "SurveyResult"]
+    },
+    {
+        "entity": "tax_assessment",
+        "attributes": ["AssessmentID", "Property", "AssessedValue", "AssessmentDate", "Assessor"]
+    },
+    {
+        "entity": "child",
+        "attributes": ["ChildID", "Name", "Gender", "DateOfBirth", "Nationality", "HealthCondition", "EducationLevel", "AdmissionDate"]
+    },
+    {
+        "entity": "caregiver",
+        "attributes": ["CaregiverID", "Name", "Gender", "DateOfBirth", "Nationality", "Relationship", "ContactNumber", "Address"]
+    },
+    {
+        "entity": "staff",
+        "attributes": ["StaffID", "Name", "Gender", "DateOfBirth", "Nationality", "Role", "Salary", "EmploymentDate"]
+    },
+    {
+        "entity": "volunteer",
+        "attributes": ["VolunteerID", "Name", "Gender", "DateOfBirth", "Nationality", "Availability", "AreaOfInterest"]
+    },
+    {
+        "entity": "sponsor",
+        "attributes": ["SponsorID", "Name", "Gender", "DateOfBirth", "Nationality", "Contact", "ContributionType", "ContributionAmount"]
+    },
+    {
+        "entity": "donor",
+        "attributes": ["DonorID", "Name", "Gender", "DateOfBirth", "Nationality", "Contact", "DonationType", "DonationAmount"]
+    },
+    {
+        "entity": "program",
+        "attributes": ["ProgramID", "Name", "Description", "Date", "Location", "Organizer", "Participants", "Status"]
+    },
+    {
+        "entity": "facility",
+        "attributes": ["FacilityID", "Name", "Description", "Location", "Capacity", "Availability", "MaintenanceStatus", "LastMaintenance"]
+    },
+    {
+        "entity": "education",
+        "attributes": ["EducationID", "Child", "Level", "School", "Status", "Teacher", "ProgressReport"]
+    },
+    {
+        "entity": "health_record",
+        "attributes": ["RecordID", "Child", "Doctor", "Date", "Condition", "Medication", "Status"]
+    }
+]

@@ -1,0 +1,18 @@
+1. Run the training file
+It will train the models which you will import in the testing phase
+
+2. Run the get_entities file
+It will generate json file for testing from the case study given in get_entities (same) file.
+
+3. Run the testing.py file
+The testing.py file will give final relationships (only) schema between entities.
+
+4. Run the training _attributes file
+It will train the gpt2 model on the attributes_data.json file
+
+5. Run the get_attrbiutes.py file
+It will generate the entity and attribute final schema.
+
+*** The final Schema is in two files. ***
+ "relationships_schema.json" and "entity_attribute_schema.json".
+ One generated from testing.py and one generated from get_attributes.py
